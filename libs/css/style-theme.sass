@@ -1,0 +1,4785 @@
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// # Media Queryes
+// --------------------------------------------------------------
+$information-phone: "only screen and (max-width: 420px)" //Smartphone
+$information-tablet: "only screen and (min-width: 768px)" //Tablet
+$information-desktop: "only screen and (min-width: 1280px)" //Desktop
+
+
+// --------------------------------------------------------------
+// # Configurações de fontes
+// --------------------------------------------------------------
+
+// - Familias
+$font-maven:        'Maven Pro', sans-serif
+$font-roboto:	    'Roboto', sans-serif
+
+// - Expessura
+$font-bold:             900
+$font-regular:          500
+$font-light:            300
+
+// - Tamanhos
+$extra-size:        	5.6em
+$big-size:              3.6em
+$medium-size:    		2.8em
+
+$menu-size: 			2.2em
+$text-size:             1.8em
+$text-small-size:       1.6em
+
+$small-size:            1.4em
+$very-small-size:       1.2em
+
+h1,h2,h3,h4,h5,h6,
+	font-family: $font-maven
+
+p,span,ul,ol,li,a, label,input,textarea, dl, dt, figcaption
+	font-family: $font-roboto
+
+
+// --------------------------------------------------------------
+// # Cores
+// --------------------------------------------------------------
+
+$primary-bg: 			#FFFFFF
+$secondary-bg: 			#FEFEFE
+$tertiary-bg: 			#0F1639
+
+$accent-color: 			#BF3030
+
+$primary-color: 		#151F29
+$primary-color-rgba: 	rgba(21, 31, 41, .3)
+
+$primary-light-color: 	#24313A
+
+$secondary-color: 		#266FFF
+$tertiary-color: 		#3060BF
+$four-color:			#D7D7D7
+
+// --------------------------------------------------------------
+// # Transitions
+// --------------------------------------------------------------
+$transition-basic:  .2s linear
+
+$trans-time-default: 		cubic-bezier(.22,1.61,.65,1)
+$trans-duration-default: 	1s
+$trans-delay-default:		.37s
+
+// --------------------------------------------------------------
+// # Backgrounds
+// --------------------------------------------------------------
+$bg-cover-loja: 		url('../../img/background.jpeg') no-repeat center center fixed
+$bg-cover-contato: 		url('../../img/background-contato.jpeg') no-repeat center center fixed
+
+// --------------------------------------------------------------
+// # Containers e classes globais
+// --------------------------------------------------------------
+.container_one
+	display: inline-block
+	position: relative
+	@media #{$information-phone}
+		width: calc(100% - 20px)
+		margin-left: 10px
+		margin-right: 10px
+
+	@media #{$information-tablet}
+		width: calc(100% - 100px)
+		margin-left: 50px
+		margin-right: 50px
+
+
+	@media #{$information-desktop}
+		width: calc(100% - 200px)
+		margin-left: 100px
+		margin-right: 100px
+
+
+
+// --------------------------------------------------------------
+// # Start Website style
+// --------------------------------------------------------------
+html
+	@media #{$information-phone}
+		background: #ffffff
+		font-size: 62.5%
+		overflow-x: hidden
+	
+	@media #{$information-desktop}
+		background: #ffffff
+		font-size: 62.5%
+		overflow-x: hidden
+
+		b
+			font-weight: 500
+		
+
+a, a:hover
+	text-decoration: none
+	color: auto
+
+
+
+
+
+// - Menu
+// Menu Icon 
+.menu-close
+	@media #{$information-phone}
+		width: 50px
+		height: 40px
+		top: 30px
+		right: 25px
+		cursor: pointer
+		z-index: 999
+		position: absolute
+
+		.line-top
+			background: $primary-bg
+			
+			transition: $transition-basic
+			
+			display: block
+			position: absolute
+			
+			width: 50px
+			height: 1px
+			top: 0
+			left: 0
+
+			
+
+		.line-middle
+			background: $primary-bg
+			
+			transition: $transition-basic
+			
+			opacity: 1
+			display: block
+			position: absolute
+
+			width: 40px
+			height: 1px
+			top: 18px
+			right: 0
+
+		
+		.line-bottom
+			background: $primary-bg
+			
+			transition: $transition-basic
+			
+			display: block
+			position: absolute
+
+			width: 30px
+			height: 1px
+			top: 38px
+			right: 0
+
+		.name
+			font-size: $very-small-size
+			font-weight: $font-regular
+			text-transform: uppercase
+			color: $primary-bg
+			transform: rotate(90deg)
+
+			top: 15px
+			right: -30px
+			position: absolute
+
+	@media #{$information-desktop}
+		display: none
+.menu-open
+	@extend .menu-close
+	
+	.line-top
+		background: $primary-bg
+		
+		transition: $transition-basic
+
+		transform: rotate(45deg)
+		
+		display: block
+		position: absolute
+		
+		width: 50px
+		height: 1px
+		top: 20px
+		left: 0
+
+	.line-middle
+		opacity: 0
+		transition: $transition-basic
+
+	.line-bottom
+		background: $primary-bg
+		
+		transition: $transition-basic
+
+		transform: rotate(-45deg)
+		
+		display: block
+		position: absolute
+		
+		width: 50px
+		height: 1px
+		top: 20px
+		right: 0
+
+	.name
+		font-size: $very-small-size
+		font-weight: $font-regular
+		text-transform: uppercase
+		color: $primary-bg
+		transform: rotate(90deg)
+
+		top: 15px
+		right: -30px
+		position: absolute
+
+		
+// - Background parallax
+.bg-parallax
+
+	background-position: 50% 0
+	background-repeat: repeat
+	background-attachment: fixed
+
+
+// - Botão link - leia o post (homepage)
+.btn-link
+	@media #{$information-phone}
+		background: $tertiary-bg
+		width: 150px
+		height: 40px
+		display: block
+
+		font-size: $small-size
+		font-weight: $font-light
+		text-align: center
+		text-transform: uppercase
+		line-height: 2.8
+		color: $primary-bg
+
+		bottom: 5px
+		left: calc(100% / 2 - 75px)
+		position: absolute
+
+	@media #{$information-desktop}
+		background: none
+		width: 200px
+		height: 45px
+
+		border: 1px solid $primary-bg
+		margin: 35px 0
+		display: block
+		position: relative
+
+		font-size: $small-size
+		font-weight: $font-light
+		text-align: center
+		color: $primary-bg
+		text-decoration: none
+		text-transform: uppercase
+		line-height: 3.5
+
+		transition-timing-function: $trans-time-default
+		transition-duration: $trans-duration-default
+		background-visibility: hidden
+		transition-delay: $trans-delay-default
+
+
+		// Ajustar efeito: entrando do left no hover
+		&:hover
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			background-visibility: hidden
+			transition-delay: $trans-delay-default
+
+			&:before
+				content: ''
+
+				background: $primary-bg
+				
+				width: 100%
+				height: 100%
+
+				left: 0
+				display: block
+				position: absolute
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				background-visibility: hidden
+				transition-delay: $trans-delay-default
+
+
+// #Slider
+// Slider container - Isolar o sistema de slider -
+.slider-inner
+	position: absolute
+	left: 0
+	top: 0
+	height: 100%
+
+	transition-duration: $trans-duration-default
+	transition-delay: $trans-delay-default
+
+	transform: translateZ(0)
+
+
+	.slide
+		position: absolute
+		top: 0
+		height: 100%
+		
+		transition-duration: $trans-duration-default
+		transition-delay: $trans-delay-default
+
+		// transform: scale(.9, .9)
+
+
+	// Active slider
+	.active-slide
+		transform: scale(1, 1)
+		transition-delay: 1s
+
+
+
+// - social wrapper
+.social-share
+	width: 190px
+	height: 45px
+
+	margin: 35px 0
+	
+	display: flex
+	justify-content: space-between
+
+	.social-item
+		background: none
+		border: 1px solid $primary-bg
+		border-radius: 3px
+		margin: 5px auto
+
+		width: 40px
+		height: 40px		
+		
+		text-align: center
+		cursor: pointer
+		overflow: hidden
+
+		transition-timing-function: $trans-time-default
+		transition-duration: .5s
+		background-visibility: hidden
+		transition-delay: .2s
+
+		position: relative
+
+		&:first-child
+			margin-left: 0
+
+		.fb-share-button
+			width: 100%
+			height: 100%
+		
+		a
+			width: 100%
+			height: 100%
+
+			display: block
+			position: absolute
+
+
+		.icon
+			font-size: $text-size
+			color: $primary-bg
+			
+			margin: 11px auto
+
+		&:hover
+			background: $primary-color
+			border-color: $primary-color
+
+			box-shadow: 0px 0px 10px $primary-color
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			background-visibility: hidden
+			transition-delay: $trans-delay-default
+
+// - Botão scroll down
+.scroll-down
+	@media #{$information-phone}
+		width: 50px
+		height: 50px
+
+		border-radius: 100%
+
+		text-align: center
+		cursor: pointer
+		opacity: .7
+
+		left: calc(100% / 2 - 25px)
+		bottom: 10px
+		position: absolute
+		display: block
+
+		span
+			display: none
+
+		i
+			font-size: $medium-size
+			color: $primary-bg
+
+			margin-top: 8px
+	@media #{$information-desktop}
+		width: 45px
+		height: 45px
+
+		border: none
+
+		text-align: center
+		cursor: pointer
+		opacity: .7
+
+		left: calc(100% / 2 - 40px)
+		bottom: 50px
+		position: absolute
+		display: block
+
+		span
+			width: 90px
+
+			font-size: $small-size
+			color: $primary-bg
+
+			top: -30px
+			left: -22px
+			position: absolute
+
+		i
+			font-size: $medium-size
+			color: $primary-bg
+
+			margin-top: 8px
+
+			animation-name: bounceDown
+			animation-duration: 1s 
+			animation-timing-function: $trans-time-default steps(10)
+			animation-iteration-count: infinite
+			animation-direction: alternate
+
+// Menu slider
+.slider-nav
+	z-index: 999
+
+.nav-servicos
+	width: 380px
+	height: 35px
+
+	margin: 20px auto
+
+	display: flex
+	justify-content: space-around
+	align-items: center
+
+	.slide-button
+		background: $primary-color
+
+		width: 18px
+		height: 18px
+		
+		margin: 25px auto
+		cursor: pointer
+		opacity: .9
+		
+		border: 1px solid $primary-bg
+		border-radius: 0
+
+		transition-timing-function: $trans-time-default
+		transition-duration: $trans-duration-default
+		transition-delay: $trans-delay-default
+
+	.active
+		background: none
+
+		border: 1px solid $primary-color
+
+		opacity: 1
+
+		transform: rotate(360deg)
+
+		transition-timing-function: $trans-time-default
+		transition-duration: $trans-duration-default
+		transition-delay: $trans-delay-default
+
+.nav-home
+	@media #{$information-phone}
+		width: 300px
+		height: 40px
+
+		bottom: 65px
+		left: calc(100% / 2 - 150px)
+		position: absolute
+
+		display: flex
+		justify-content: space-around
+		align-items: center
+
+		.slide-button
+			background: $primary-color
+
+			width: 18px
+			height: 18px
+			
+			margin: auto
+			cursor: pointer
+			opacity: .5
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			background-visibility: hidden
+			transition-delay: $trans-delay-default
+
+
+		.active
+			opacity: 1
+
+			transform: rotate(360deg)
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			transition-delay: $trans-delay-default
+	@media #{$information-desktop}
+		width: 70px
+		height: 200px
+
+		top: calc(100% / 2 - 100px)
+		right: 100px
+		position: absolute
+
+		display: flex-root
+		justify-content: space-around
+		align-items: center
+
+		.slide-button
+			background: $primary-bg
+
+			width: 45px
+			height: 5px
+			
+			margin: 25px auto
+			cursor: pointer
+			opacity: .5
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			background-visibility: hidden
+			transition-delay: $trans-delay-default
+
+
+		.active
+			background: $tertiary-bg
+			width: 70px
+			height: 8px
+
+			opacity: 1
+
+			// transform: rotate(360deg)
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			transition-delay: $trans-delay-default
+// --------------------------------------------------------------
+// # Header - static > fixed
+// --------------------------------------------------------------
+.main-header
+	@media #{$information-phone}
+		height: 80px
+		top: 0
+		left: 0
+		z-index: 9999
+		position: fixed
+
+		// -Logotipo
+		.logo_container
+			width: 120px
+			height: 60px
+
+			top: 30px
+			left: 10px
+			position: absolute
+			background: $primary-color
+			overflow: hidden
+
+			img
+				width: 100%
+				height: 100%
+
+		.menu-awp-primary-container
+			background: $primary-color
+
+			width: 80%
+			height: 100%
+
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			top: 0
+			right: -100%
+			bottom: 0
+			z-index: 99
+
+			position: fixed
+
+			transition: $transition-basic
+
+			// - <ul>
+			.main-menu
+				width: 90%
+				height: auto
+
+				margin: auto
+
+
+				// - Menu item
+				.menu-item
+					width: 80%
+					height: 70px
+
+					margin: 0px auto
+					
+					font-size: $text-small-size
+					font-weight: $font-bold
+					text-align: left
+					text-transform: uppercase
+					line-height: 4.5
+					letter-spacing: 2px
+
+					border-bottom: 1px solid $primary-light-color
+					
+					// - Link
+					a
+						color: $primary-bg
+		.active-menu
+			right: 0
+			
+			transition: $transition-basic
+
+	@media #{$information-desktop}
+		height: 120px
+
+		top: 0
+		right: 0
+		left: 0
+
+		z-index: 9999
+		position: fixed
+
+		transition-delay: $trans-delay-default
+		transition-duration: $trans-duration-default
+		transition-timing-function: $trans-time-default
+
+		// -Logotipo
+		.logo_container
+			width: 180px
+			height: 80px
+
+			top: 10px
+			left: 10px
+
+			position: absolute
+
+			transition-delay: $trans-delay-default
+			transition-duration: $trans-duration-default
+			transition-timing-function: $trans-time-default
+
+			img
+				width: 100%
+				height: 100%
+	
+		// -Menu
+		.menu-awp-primary-container
+			background: none
+			width: auto
+			height: 50px
+			
+			top: 30px
+			right: 0
+
+			z-index: 99
+			position: absolute
+
+			transition-delay: $trans-delay-default
+			transition-duration: $trans-duration-default
+			transition-timing-function: $trans-time-default
+
+			// - <ul>
+			.main-menu
+				width: 100%
+				height: 100%
+
+				display: flex
+				justify-content: center
+				align-items: center
+
+				// - Menu item
+				.menu-item
+					height: 40px
+					margin: 0 25px
+					
+					font-size: $small-size
+					font-weight: $font-regular
+					text-transform: uppercase
+					line-height: 3
+
+					position: relative
+
+					transition: $transition-basic
+
+					&:hover
+						transition: $transition-basic
+
+					// - Link
+					a
+						color: $primary-bg
+						letter-spacing: 2px
+
+
+		.active-menu
+			left: auto
+			right: 0
+
+			transition-delay: $trans-delay-default
+			transition-duration: $trans-duration-default
+			transition-timing-function: $trans-time-default
+
+// Quando rolar a página
+.main-header-compact
+	@media #{$information-desktop}
+		background: $primary-bg
+
+		height: 80px
+		border-bottom: 1px solid $secondary-bg
+
+		transition-delay: $trans-delay-default
+		transition-duration: $trans-duration-default
+		transition-timing-function: $trans-time-default
+
+		// -Logotipo
+		.logo_container
+			width: 120px
+			height: 55px
+
+			top: 10px
+			left: 10px
+
+			position: absolute
+
+			transition-delay: $trans-delay-default
+			transition-duration: $trans-duration-default
+			transition-timing-function: $trans-time-default
+
+			img
+				width: 100%
+				height: 100%
+
+
+		.menu-awp-primary-container
+			top: 10px
+
+			.menu-item
+				a
+					color: $secondary-color !important
+// --------------------------------------------------------------
+// # Homepage - section home
+// --------------------------------------------------------------
+#homepage
+	@media #{$information-phone}
+		width: 100%
+		height: 100vh
+		overflow: hidden
+		position: relative
+		
+		// Capa
+		.cover-produto
+			background: url(../../img/background.jpeg) no-repeat center center fixed
+			background-size: cover
+
+		// - Blog destaque
+		.post-wrap 
+			display: flex
+			align-items: center
+
+			&:before
+				content: ''
+				background: url('../../img/checkered-pattern.png') repeat
+				background-color: $primary-color
+				
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+
+				opacity: .7
+				position: absolute
+
+			// Background
+			.wp-post-image
+				width: 300%
+				height: auto
+
+				left: -150%
+
+				z-index: -9
+				position: absolute
+			
+			// Post blog
+			.post-content-blog
+				height: auto
+
+				display: flow-root
+				align-items: center
+				
+				position: absolute
+				.date-post
+					font-size: $small-size
+					font-weight: $font-light
+					text-align: left
+					color: $primary-bg
+
+					margin: 12px auto 
+					display: block
+
+
+				.title
+					font-size: $medium-size
+					font-weight: $font-regular						
+					text-align: left
+					color: $primary-bg
+					line-height: $small-size
+					
+					margin: 15px 0
+					top: 20px
+					display: block
+
+				.excerpt 
+					width: 100%
+
+					p
+						font-size: $text-size
+						font-weight: $font-light
+						color: $primary-bg
+						line-height: $text-size
+						letter-spacing: 2px
+					
+
+				// Esconder a box por enquanto
+				.social-share
+					display: none
+				
+				.link-to-post
+					width: 110px
+					height: 40px
+
+					display: block
+					margin: 35px 0
+
+					font-size: $text-small-size
+					font-weight: $font-light
+					color: $primary-bg
+					line-height: 2.5
+					padding-left: 10px
+
+					border-bottom: 1px solid $primary-bg
+
+					position: relative
+
+					&:before
+						content: ''
+						background: $primary-bg
+
+						width: 15px
+						height: 1px
+
+						transform: rotate(45deg)
+
+						bottom: 5px
+						right: -2px
+						position: absolute
+					
+					&:after
+						content: ''
+						background: $primary-bg
+
+						width: 15px
+						height: 1px
+
+						transform: rotate(-45deg)
+						
+						bottom: -7px
+						right: -2px
+						position: absolute
+			// Post produtos
+			.post-content-produto
+				height: 260px
+				display: flow-root
+
+				.wp-post-image
+					width: 250px
+					height: auto
+					margin: auto 25px
+					z-index: 9
+				
+
+				.wrap-infos
+					width: 300px
+					height: auto
+					margin: auto 
+
+					.title
+						width: 100% 
+
+						font-size: $menu-size
+						font-weight: $font-regular
+						color: $primary-bg
+						text-align: center
+
+						margin: 25px auto
+						top: 145px
+						position: absolute
+
+					.excerpt
+						background: $primary-color
+						opacity: .9
+
+						padding: 10px 15px
+						margin: 45px auto
+						border-radius: 5px
+
+						font-size: $text-small-size
+						font-weight: $font-regular
+						line-height: $text-small-size
+						color: $primary-bg
+						
+						z-index: 99
+
+						top: 30px
+						position: absolute
+						display: none
+
+						p
+							// opacity: .5
+
+					.price-product
+						font-size: $text-size
+						font-weight: $font-light
+						color: $primary-bg
+						margin: 15px auto
+						display: block
+
+					
+					.btn-link
+
+						bottom: 5px
+						position: absolute
+
+	@media #{$information-desktop}
+		width: 100%
+		height: 100vh
+		overflow: hidden
+		position: relative
+		
+		// Capa
+		.cover-produto
+			background: url(../../img/background.jpeg) no-repeat center center fixed
+			background-size: cover
+
+		// - Blog destaque
+		.post-wrap 
+			display: flex
+			align-items: center
+
+			&:before
+				content: ''
+				background: url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png') repeat
+				// background-color: $primary-color
+
+				width: 150%
+				height: 100%
+				
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+
+				transform: rotate(45deg)
+
+				opacity: .7
+				position: absolute
+
+			// Background
+			.wp-post-image
+				width: auto
+				height: auto
+
+				z-index: -9
+				// position: relative
+			
+			// Post blog
+			.post-content-blog
+				position: absolute
+
+				display: flow-root
+				align-items: center
+
+				.date-post
+					font-size: $small-size
+					font-weight: $font-light
+					text-align: left
+					letter-spacing: 2px
+					color: $primary-bg
+
+					margin: 35px auto 
+					display: none
+
+
+				.title
+					width: 680px
+
+					font-size: $extra-size
+					font-weight: $font-regular						
+					text-align: left
+					color: $primary-bg
+					line-height: $small-size
+					letter-spacing: 2px
+					
+					margin: 35px 0
+					top: 20px
+					display: block
+
+				
+				.excerpt 
+					width: 690px
+
+					p
+						font-size: $text-size
+						font-weight: $font-light
+						color: $primary-bg
+						line-height: $text-size
+						letter-spacing: 2px
+					
+
+				.social-share
+					display: none
+
+				
+				.link-to-post
+					background: none
+
+					width: 160px
+					height: 50px
+
+					display: block
+					margin: 35px 0
+
+					font-size: $text-small-size
+					font-weight: $font-light
+					color: $primary-bg
+					text-align: center
+					text-transform: lowercase
+					letter-spacing: 2px
+					line-height: 3.1
+
+					border-bottom: 1px solid $tertiary-color
+					border-radius: 3px
+					
+					opacity: .9
+
+					transition: $transition-basic
+
+					perspective: 200px
+					overflow: hidden
+
+					position: relative
+
+					&:hover
+						color: $primary-color
+
+						transition: $transition-basic
+						transition-timing-function: $trans-time-default
+						transition-duration: $trans-duration-default
+						transition-delay: $trans-delay-default
+
+						&:before
+							content: ''
+							background: $tertiary-color
+
+							width: 100%
+							height: 100%
+
+							bottom: 0
+							left: 0
+
+							animation-name: enterBottom
+							animation-duration: .5s
+
+							transform: rotateY(360deg)
+
+							text-align: center
+
+							transition-timing-function: $trans-time-default
+							transition-duration: $trans-duration-default
+							transition-delay: $trans-delay-default
+
+							position: absolute
+
+							z-index: -9
+					
+					
+
+			// Post produtos
+			.post-content-produto
+				overflow-x: hidden
+				display: flex
+				// justify-content: space-between
+				flex-wrap: wrap
+
+
+				.wp-post-image
+					width: auto
+					height: auto
+					margin: auto
+					z-index: 9
+				
+
+				.wrap-infos
+					width: 410px
+					height: auto
+					margin: auto 
+
+					.title
+						font-size: $medium-size
+						font-weight: $font-regular
+						color: $primary-bg
+						margin: 25px auto
+
+					.excerpt
+						width: 85%
+						margin: 45px auto
+						margin-left: 0
+
+						font-size: $text-small-size
+						font-weight: $font-regular
+						line-height: $text-small-size
+						color: $primary-bg
+
+					.price-product
+						font-size: $text-size
+						font-weight: $font-light
+						color: $primary-bg
+						margin: 15px auto
+						display: block
+
+					
+					.btn-big
+						background: $accent-color
+						width: 260px
+						height: 60px
+						margin: 25px 0
+						display: block
+
+						font-size: $small-size
+						font-weight: $font-light
+						text-align: center
+						text-transform: uppercase
+						line-height: 4.3
+						color: $primary-bg
+
+			
+
+
+			
+
+
+// --------------------------------------------------------------
+// # Serviços - section services
+// --------------------------------------------------------------
+#servicos
+	@media #{$information-phone}
+		background: $primary-bg
+		width: 100%
+		overflow: hidden
+	
+		// - Header section
+		.header-section-primary
+			height: auto
+
+			margin-top: 95px
+			margin-right: auto
+			margin-left: auto
+
+			text-align: center
+			align-items: center
+			display: flex
+
+			.title
+				font-size: $medium-size
+				font-weight: $font-regular
+				text-transform: lowercase
+				color: $tertiary-color
+				line-height: $small-size
+				letter-spacing: 2px
+
+				margin: 5px auto
+				position: relative
+
+
+
+		.container-slider
+			width: 100%
+			height: 100%
+
+			margin: 10px auto
+			overflow: hidden
+
+			// - Servicos
+			.services-wrap
+				width: 100%
+				height: 370px
+
+				top: 25px
+				display: flex
+				flex-wrap: wrap
+				order: 3
+				
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+				margin: auto 
+				position: relative
+
+
+				// - Item de servico
+				.service-item
+					width: 100%
+					height: auto
+
+					margin: 10px auto
+
+					display: flow-root
+					align-items: center
+					justify-content: space-between
+
+					// position: relative
+
+					// Thumb/icon container 
+					div
+						width: 100%
+						height: auto
+
+						display: flex
+						align-items: center
+						flex-wrap: wrap
+
+						text-align: center
+						border: none
+
+						// - icon
+						.attachment-awp-icon
+							width: 64px
+							height: 64px
+
+							display: block
+							margin: 5px auto
+
+						// - title
+						.title-service
+							width: 100%
+
+							font-size: $text-size
+							font-weight: $font-bold
+							text-transform: uppercase
+							color: $primary-light-color
+							
+							margin: 25px auto
+
+							display: block
+
+					// - resumo
+					.excerpt					
+						font-size: $text-small-size
+						font-weight: $font-light
+						color: $primary-light-color
+						line-height: $text-small-size
+
+						p
+							width: 90%
+							text-align: center
+							margin: auto
+					
+
+					
+	@media #{$information-desktop}
+		background: $primary-bg
+		width: 100%
+		min-height: 768px
+	
+		// - Header section
+		.header-section-primary
+			height: 80px
+
+			margin-top: 120px
+			margin-bottom: 25px
+			margin-right: auto
+			margin-left: auto
+
+			text-align: center
+			align-items: center
+			display: flex
+
+			.title
+				font-size: $medium-size
+				font-weight: $font-regular
+				color: $tertiary-color
+				text-transform: uppercase
+				letter-spacing: 2px
+
+				margin: 5px auto
+				position: relative
+
+		.container-slider
+			width: 1024px
+			height: 100%
+
+			margin: 10px auto
+			overflow: hidden
+
+			// - Servicos
+			.services-wrap
+				width: 100%
+				height: 340px
+
+				top: 25px
+				display: flex
+				flex-wrap: wrap
+				order: 3
+				overflow: hidden
+
+				margin: auto 
+				position: relative
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+
+				// - Item de servico
+				.service-item
+					width: calc(100% / 30px)
+					height: 100%
+
+					margin: 10px auto 25px auto
+					display: flex 
+					align-items: center
+					justify-content: space-between
+
+					position: absolute
+
+
+					div
+						width: calc(100% - 40px)
+						height: 100%
+
+						display: flex
+						align-items: center
+						flex-wrap: wrap
+
+						text-align: center
+						border: none
+
+						&:first-child
+							position: relative
+
+							&:after
+								content: ''
+								background: $primary-color
+								
+								width: 1px
+								height: 240px
+
+								top: 50px
+								right: 0
+
+								opacity: .2
+								position: absolute
+								
+
+
+						// - icon
+						.attachment-awp-icon
+							display: block
+							margin: 5px auto
+
+						// - title
+						.title-service
+							width: 100%
+
+							font-size: $text-size
+							font-weight: $font-regular
+							text-transform: uppercase
+							color: $tertiary-color
+							letter-spacing: 2px
+
+							top: -50px
+
+							display: block
+							position: relative
+
+					// - resumo
+					.excerpt					
+						font-size: $text-small-size
+						font-weight: $font-light
+						color: $primary-color
+						line-height: $text-small-size
+
+						p
+							width: 80%
+							text-align: left
+							margin: auto
+
+
+// --------------------------------------------------------------
+// # Portfólio - section portfólio
+// --------------------------------------------------------------
+#portfolio
+	@media #{$information-phone}
+		background: $primary-bg
+		width: 100%
+
+		.header-section-secondary
+			width: 100%
+			height: auto
+			margin-top: 90px
+
+			text-align: center
+			align-items: center
+			display: flow-root
+			
+
+			// - title
+			.title
+				font-size: $medium-size
+				font-weight: $font-light
+				text-transform: uppercase
+				color: $primary-light-color
+				display: inline-block
+				margin: 25px auto
+				position: relative
+
+				&:after
+					content: ''
+					background: $primary-light-color
+					width: 100%
+					height: 2px
+					top: 50px
+					left: 0
+					position: absolute
+
+			// - Subtitle
+			.subtitle
+				font-size: $medium-size
+				font-weight: $font-regular
+				text-transform: uppercase
+				line-height: 1.4
+				color: $primary-color
+				margin: 10px auto
+				display: block
+
+		
+		.slider-container
+			background: $tertiary-bg
+
+			width: 100%
+			height: 510px
+			margin-top: 40px
+			
+			// overflow: hidden
+			position: relative
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			transition-delay: $trans-delay-default
+
+			&:before,
+			&:after
+				content: ''
+
+				background: $tertiary-bg
+				
+				width: 100%
+				height: 100%
+				
+				top: 0
+				bottom: 0
+				right: 0
+				left: -100%
+
+				position: absolute
+			
+			&:after
+				content: ''
+
+				right: -100%
+				left: auto
+				
+				z-index: 9
+				position: absolute
+
+		// - Portfólio wrap
+		.portfolio-wrap
+			position: relative
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			transition-delay: $trans-delay-default
+
+			// - Portfólio item
+			.portfolio-item
+				width: 100%
+				height: 400px
+
+				margin: 20px auto
+				display: flex
+				flex-wrap: wrap
+				align-content: center
+
+				position: absolute
+
+				// -image
+				.attachment-awp-pic-portfolio
+					width: 90%
+					height: auto
+					margin: 50px auto
+					display: block
+				
+				// -description
+				.mask
+					background: none
+					width: 100%
+					height: 100%
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					background-visibility: hidden
+					transition-delay: $trans-delay-default
+
+					top: auto
+					left: 0
+					bottom: 0
+					position: absolute
+
+
+					// -title
+					.title
+						font-size: $text-size
+						font-weight: $font-bold
+						text-align: center
+						color: $primary-bg
+
+						margin: 10px auto
+						
+						display: block
+
+					// -btn link
+					.btn-medium
+						background: none
+						width: 130px
+						height: 55px
+						display: block
+
+						border-bottom: 1px solid $primary-bg
+						margin: auto
+						margin-top: 300px
+
+						font-size: $text-small-size
+						font-weight: $font-regular
+						text-align: center
+						line-height: 3.5
+						color: $primary-bg
+						text-decoration: none
+					
+
+		// - Nav slider
+		.nav-portfolio
+			width: 100%
+			height: 40px
+
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			bottom: 30px
+			left: 0
+			position: absolute
+
+			.slide-button
+				background: $primary-bg
+
+				width: 28px
+				height: 28px
+
+				margin: auto
+
+				opacity: .5
+
+				.active
+					border: 1px solid $primary-bg
+
+					opacity: 1
+
+
+	@media #{$information-desktop}
+		background: $secondary-bg
+		width: 100%
+		height: 100vh
+		overflow: hidden
+
+		.header-section-secondary
+			width: auto
+			height: 130px
+			top: 110px
+			left: 0 
+			position: relative
+
+			text-align: center
+
+			display: block
+
+			// - title
+			.title
+				font-size: $medium-size
+				font-weight: $font-regular
+				text-transform: uppercase
+				color: $tertiary-color
+				letter-spacing: 2px
+
+				display: block
+
+				position: relative
+
+				&:after
+					content: ''
+					background: $tertiary-color
+
+					width: 190px
+					height: 1px
+
+					top: 50px
+					left: calc(100% / 2 - 95px)
+
+					position: absolute
+
+			// - Subtitle
+			.subtitle
+				font-size: $big-size
+				font-weight: $font-light
+				text-transform: lowercase
+				color: $tertiary-color
+				letter-spacing: 2px
+
+				top: 40px
+
+				display: block
+
+				position: relative
+
+		
+		// - Portfólio wrap
+		.portfolio-wrap
+			background: none
+
+			width: 100%
+			height: 540px
+			margin-top: 110px
+			
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+
+			position: relative
+
+			&:before,
+			&:after
+				// content: ''
+				background: linear-gradient(to bottom, #1f223a, #302740)
+				
+				width: 100%
+				height: 100%
+				
+				top: 0
+				left: -100%
+				position: absolute
+
+			&:after
+				left: auto
+				right: -99%
+			
+
+
+
+			// - Portfólio item
+			.portfolio-item
+				width: 300px
+				height: 250px
+
+				margin: auto
+				
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+
+				// overflow: hidden
+				position: relative
+
+				.size-awp-pic-portfolio
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					transition-delay: $trans-delay-default
+
+					&:hover
+						box-shadow: 10px 10px 2px $primary-bg
+						
+						transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					transition-delay: $trans-delay-default
+
+
+				.mask
+					width: 100%
+					height: 250px
+
+					top: 0
+					left: 0
+
+					opacity: 0
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					transition-delay: $trans-delay-default
+
+					position: absolute
+
+					// -title
+					.title
+						width: 100%
+
+						font-size: $menu-size
+						font-weight: $font-regular
+						text-align: left
+						text-transform: uppercase
+						color: $tertiary-color
+						
+						display: block
+
+						top: 10px
+						position: absolute
+
+					// -btn link
+					.btn-medium
+						background: none
+						width: 50px
+						height: 50px
+
+						margin: 15px auto
+						display: block
+
+						font-size: $text-small-size
+						font-weight: $font-regular
+						text-align: center
+						line-height: 3.1
+						color: $tertiary-color
+						text-decoration: none
+
+						border-bottom: 1px solid $tertiary-color
+						border-radius: 3px
+					
+						opacity: .9
+
+						transition: $transition-basic
+
+						perspective: 200px
+						overflow: hidden
+
+						bottom: 0
+						position: absolute
+
+						&:hover
+							color: $primary-bg
+
+							transition: $transition-basic
+							transition-timing-function: $trans-time-default
+							transition-duration: $trans-duration-default
+							transition-delay: $trans-delay-default
+
+							&:before
+								content: ''
+								background: $tertiary-color
+
+								width: 100%
+								height: 100%
+
+								bottom: 0
+								left: 0
+
+								animation-name: enterBottom
+								animation-duration: .5s
+
+								transform: rotateY(360deg)
+
+								text-align: center
+
+								transition-timing-function: $trans-time-default
+								transition-duration: $trans-duration-default
+								transition-delay: $trans-delay-default
+
+								position: absolute
+
+								z-index: -9
+
+
+					// - tags
+					.wrap-tags
+						background: none
+						width: 100%
+						height: 60px
+
+						bottom: 0px
+						left: 0
+
+						position: absolute
+
+				
+					&:hover
+						height: 390px
+
+						top: -60px
+
+						opacity: 1
+						
+						transition-timing-function: $trans-time-default
+						transition-duration: $trans-duration-default
+						transition-delay: $trans-delay-default
+						
+				
+			
+			.selected-case
+				overflow: visible
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				background-visibility: hidden
+				transition-delay: $trans-delay-default
+
+		// - Footer
+		.footer-section
+			width: 100%
+			height: 80px
+			margin: 25px auto
+			text-align: center
+
+
+			// -text
+			.text
+				font-size: $text-size
+				font-weight: $font-light
+				margin: 20px auto
+
+			// -btn link
+			.btn-medium
+				background: $accent-color
+				width: 220px
+				height: 50px
+				display: block
+
+				margin: 35px auto
+
+				font-size: $text-small-size
+				font-weight: $font-regular
+				text-align: center
+				line-height: 3.3
+				color: $primary-bg
+				text-decoration: none
+
+
+
+// --------------------------------------------------------------
+// # Loja - section loja
+// --------------------------------------------------------------
+#loja
+	@media #{$information-phone}
+		background: $bg-cover-loja
+		background-size: cover
+		width: 100%
+		min-height: 660px
+		position: relative
+
+		&:after
+			content: ''
+
+			background: $tertiary-bg
+
+			width: 100%
+			height: 100%
+
+			opacity: .5
+			z-index: 1
+
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			position: absolute
+
+			
+
+		// - Container
+		.loja-wrap
+			height: 100%
+			z-index: 9
+				
+			// - Post
+			.produto-post
+				width: 100%
+				height: 100%
+				margin-top: 90px
+				position: relative
+
+				// - Thumb loja
+				.attachment-awp-thumb-loja
+					width: 100%
+					height: auto
+
+					top: 60px
+
+					position: absolute
+
+
+				// - Aside infos
+				.aside-infos
+					background: none
+					width: 100%
+					height: 470px
+					top: 0
+					right: auto
+					left: 0
+					position: absolute
+
+
+					.wrapper-infos
+						width: 100%
+						height: 350px
+						margin: 15px auto
+						display: block
+
+					// - Title
+					.title
+						font-size: $menu-size
+						font-weight: $font-light
+						text-transform: uppercase
+						text-align: center
+						color: $primary-bg
+
+					.resumo
+						font-size: $text-small-size
+						font-weight: $font-light
+						color: $primary-bg
+						line-height: $text-size
+						margin: 25px 0px
+						display: none
+
+
+					// - Desc list
+					.meta-box
+						width: 100%
+
+						bottom: 95px
+						position: absolute
+
+						.meta-item
+							width: 100%
+							display: flex
+							flex-wrap: wrap
+							align-items: center
+
+							position: relative
+
+							span
+								width: 100%
+								
+								text-align: center
+								margin: 10px auto
+
+								display: block
+								
+								.icon
+									width: 50px
+									text-align: center
+									font-size: $medium-size
+									color: $primary-bg
+
+							.text-big			
+								font-size: $text-size
+								font-weight: $font-regular
+								color: $primary-bg
+
+								margin-top: 15px
+							
+							.text-small
+								font-size: $small-size
+								color: $primary-bg
+								display: block
+								
+
+							a
+								font-size: $small-size
+								font-weight: $font-regular
+								text-transform: lowercase
+								color: $primary-bg
+								margin: 0 15px
+
+							&:after
+								content: ''
+
+								background: $primary-bg
+								opacity: .5
+
+								width: 120px
+								height: 1px
+
+								bottom: -10px
+								left: calc(100% / 2 - 60px)
+
+								display: block
+								position: absolute
+
+							&:nth-child(2)
+								display: none
+
+							
+											
+					// #social-share
+					.social-share
+						width: 250px
+						height: 60px
+						margin: 10px auto
+						display: flex
+						justify-content: space-between
+						display: none
+
+						.social-item
+							background: $primary-light-color
+							width: 50px
+							height: 50px
+							margin: 5px auto
+							text-align: center
+							cursor: pointer
+
+							.icon
+								font-size: $text-size
+								color: $primary-bg
+								margin: 16px auto
+
+	@media #{$information-desktop}
+		background: $bg-cover-loja
+		background-size: cover
+		width: 100%
+		height: 100vh
+		min-height: 768px
+		position: relative
+
+		&:after
+			content: ''
+			background: $tertiary-bg
+			width: 100%
+			height: 100%
+			opacity: .7
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			position: absolute
+			z-index: 1
+
+		
+		// - Container
+		.loja-wrap
+			height: 100%
+			z-index: 9
+				
+			// - Post item
+			.produto-post
+				width: 100%
+				height: 100%
+
+				display: flex
+				justify-content: space-between
+
+				position: relative
+
+
+				.wrap-container
+					width: calc(100% / 2 - 50px)
+					height: 100%
+
+					margin: 0 auto
+
+					display: flex
+					align-items: center
+
+					// - Capa
+					.attachment-awp-thumb-loja
+						width: 520px
+						height: 330px
+						margin: auto
+
+
+					// - INfos
+					.aside-infos
+						width: 100%
+						height: 480px
+						margin: auto
+						display: block
+						align-items: center
+
+						// - Title
+						.title
+							font-size: $medium-size
+							font-weight: $font-light
+							text-transform: uppercase
+							color: $primary-bg
+
+						.resumo
+							width: 80%
+
+							font-size: $text-small-size
+							font-weight: $font-light
+							color: $primary-bg
+							line-height: $text-size
+							margin: 25px 0
+
+							position: relative
+
+							&:after
+								content: ''
+								background: $primary-bg
+
+								width: 220px
+								height: 1px
+								
+								left: 0
+								bottom: -25px
+
+								opacity: .5
+								display: block
+								position: absolute
+
+					// - Meta box
+					.meta-box
+						width: 100%
+						height: 60px
+						margin: 55px 0
+
+						display: flex
+						flex-wrap: wrap
+						justify-content: space-between
+						align-items: center
+
+
+						.meta-item
+							width: calc(100% / 2 - 10px)
+							height: 50px
+							margin: 10px 0
+							display: flex
+							flex-wrap: wrap
+							align-items: center
+							position: relative
+
+							.square-icon
+								background: $primary-color-rgba
+								
+								width: 50px
+								height: 50px
+								
+								margin-right: 10px
+
+								text-align: center
+								display: flexbox
+								align-items: center
+
+								.icon
+									
+									text-align: center
+									font-size: $menu-size
+									color: $primary-bg
+									line-height: 2.3
+
+							.text-big			
+								font-size: $text-size
+								font-weight: $font-bold
+								color: $primary-bg
+								
+								top: 5px
+								left: 80px
+								position: absolute
+							
+							.text-small
+								font-size: $small-size
+								font-weight: $font-light
+								color: $primary-bg
+
+								bottom: 5px
+								left: 80px
+								position: absolute
+
+							a
+								font-size: $small-size
+								font-weight: $font-regular
+								text-transform: lowercase
+								color: $primary-bg
+								margin: 0 15px
+
+											
+					// #btn
+					.btn-link
+						width: 150px
+						background: $primary-color-rgba
+						border-color: $primary-color
+						
+						i
+							margin: auto 6px
+
+
+
+// --------------------------------------------------------------
+// # Blog - section blog
+// --------------------------------------------------------------
+#blog
+	@media #{$information-phone}
+		background: $secondary-bg
+		width: 100%
+		height: 850px
+		position: relative
+
+		// - header
+		.header-section-secondary
+			width: 100%
+			height: auto
+			top: 90px
+			left: 0
+			position: relative
+
+			text-align: center
+			display: inline-block
+
+			// - title
+			.title
+				font-size: $medium-size
+				font-weight: $font-light
+				text-transform: uppercase
+				color: $primary-light-color
+
+				margin: 25px auto
+				position: relative
+
+				&:after
+					content: ''
+					background: $primary-light-color
+					width: 120px
+					height: 1px
+					top: 50px
+					left: calc(100% / 2 - 60px)
+					position: absolute
+
+			// - Subtitle
+			.subtitle
+				font-size: $medium-size
+				font-weight: $font-regular
+				text-transform: uppercase
+				color: $primary-color
+				top: 20px
+				display: inline-block
+				position: relative
+
+
+		.container-blog
+			overflow: hidden
+
+			transition-timing-function: $trans-time-default
+			transition-duration: $trans-duration-default
+			transition-delay: $trans-delay-default
+
+			// - Post wrap
+			.blog-wrap
+				height: 590px
+				
+				margin-top: 140px
+
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-around
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+				position: relative
+				
+
+				// - <article>
+				.blog-post
+					background: $secondary-bg
+
+					height: 450px				
+
+					box-shadow: 0px 0px 10px -8px $tertiary-bg
+
+					margin: 10px auto
+
+					overflow: hidden
+					display: block
+					position: absolute
+
+
+					// - Thumb
+					.wp-post-image
+						width: 100%
+						height: auto
+
+						transition-timing-function: $trans-time-default
+						transition-duration: $trans-duration-default
+						background-visibility: hidden
+						transition-delay: $trans-delay-default
+
+
+					// - wrap-infos
+					.wrap-description
+						background: $secondary-bg
+
+						width: calc(100% - 30px)
+						height: auto
+						padding: 15px
+
+						transition-timing-function: $trans-time-default
+						transition-duration: $trans-duration-default
+						background-visibility: hidden
+						transition-delay: $trans-delay-default
+
+						z-index: 9
+						position: relative
+
+						// - span category
+						.the-category
+							background: none
+
+							width: 120px
+							height: 30px
+
+							margin: 10px
+							border: 1px solid $primary-bg
+							border-radius: 3px
+							display: block
+
+							font-size: $small-size
+							font-weight: $font-light
+							color: $primary-bg
+							text-align: center
+							line-height: 2.1
+
+							top: -60px
+							left: calc(100% / 2 - 60px)
+							position: absolute
+
+
+						// - title post
+						.title-post
+							font-size: $medium-size
+							font-weight: $font-regular
+							line-height: $small-size
+							text-align: left
+							text-decoration: none
+							color: $primary-color
+
+							margin-top: 10px auto
+						
+						// - date
+						.the-date
+							display: block
+
+							font-size: $small-size
+							font-weight: $font-light
+							color: $tertiary-bg
+							text-align: left
+							margin: 25px auto
+
+					.social-share
+						display: none
+
+			.nav-blog
+				width: 100%
+				height: 35px
+
+				display: flex
+				justify-content: center
+				align-content: center
+
+				bottom: 10px
+				left: 0
+				position: absolute
+
+				.slide-button
+					background: $primary-color
+
+					width: 30px
+					height: 30px
+
+					margin: 0 auto
+				
+	@media #{$information-desktop}
+		background: $secondary-bg
+		width: 100%
+		min-height: 850px
+		position: relative
+
+		// - header
+		.header-section-secondary
+			height: 90px
+
+			top: 90px
+			left: 0
+			position: relative
+
+			text-align: center
+			display: inline-block
+
+			// - title
+			.title
+				font-size: $medium-size
+				font-weight: $font-light
+				text-transform: uppercase
+				color: $primary-light-color
+				display: inline-block
+				margin-top: 25px
+				margin-right: 25px
+				position: relative
+
+				&:after
+					content: ''
+					background: $primary-light-color
+					width: 100%
+					height: 2px
+					top: 50px
+					left: 0
+					position: absolute
+
+			// - Subtitle
+			.subtitle
+				font-size: $extra-size
+				font-weight: $font-light
+				text-transform: uppercase
+				color: $primary-color
+				top: 20px
+				display: inline-block
+				position: relative
+
+
+		// - Post wrap
+		.blog-wrap
+			width: 100%
+			height: 480px
+
+			margin: 10px auto
+			top: 150px
+			position: relative
+			
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+
+			// - <article>
+			.blog-post
+				
+				width: calc(100% / 3 - 40px)
+				height: 460px
+
+				margin: 0 auto
+				box-shadow: 0px 0px 20px -8px $primary-color
+				border-radius: 5px
+
+				overflow: hidden
+				
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				align-items: center
+				position: relative
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				background-visibility: hidden
+				transition-delay: $trans-delay-default
+
+				// - Thumb
+				.wp-post-image
+					width: 100%
+					height: 240px
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					background-visibility: hidden
+					transition-delay: $trans-delay-default
+
+					z-index: 1
+					// position: absolute
+
+				// - wrap-infos
+				.wrap-description
+					background: $secondary-bg
+					width: 100%
+					height: 220px
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					background-visibility: hidden
+					transition-delay: $trans-delay-default
+
+					left: 0
+					bottom: 0
+
+					z-index: 9
+					position: relative
+
+					// - span category
+					.the-category
+						background: none
+						width: 130px
+						height: 35px
+
+						border: 1px solid $primary-bg
+						border-radius: 4px
+						
+						display: block
+
+						font-size: $small-size
+						font-weight: $font-light
+						color: $primary-bg
+						text-align: center
+						line-height: 2.1
+
+						top: -70px
+						left: calc(100% / 2 - 65px)
+						position: absolute
+
+
+					// - title post
+					.title-post
+						width: calc(100% - 20px)
+						height: 120px
+
+						font-size: $menu-size
+						font-weight: $font-regular
+						line-height: $text-small-size
+						text-align: center
+						text-decoration: none
+						color: $primary-color
+
+						display: inline-grid
+						align-items: center
+						margin: auto 10px
+
+						position: relative
+
+						&:after
+							content: ''
+							background: $primary-color
+							
+							width: 100px
+							height: 1px
+							
+							bottom: -5px
+							left: calc(100% / 2 - 50px)
+
+							display: block
+							opacity: .5
+							position: absolute
+					
+					// - date
+					.the-date
+						font-size: $small-size
+						font-weight: $font-light
+						color: $primary-color
+						text-align: center
+
+						margin: 20px auto
+						display: block
+
+					
+				// #social-share
+				.blog-social-share
+					width: 150px
+					height: 35px
+
+					margin: 0
+					bottom: 10px
+					left: calc(100% / 2 - 75px)
+
+					z-index: 99
+					position: absolute
+
+					.social-item
+						width: 32px
+						height: 32px
+
+						border: none
+
+						i
+							color: $primary-color
+							margin: 7px auto
+							opacity: .5
+							transition: $transition-basic
+
+							&:hover
+								opacity: 1
+								transition: $transition-basic
+
+						&:hover
+							background: none
+							box-shadow: none
+
+				// - Thumb
+				.wp-post-image
+					width: 100%
+					height: 100%
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					background-visibility: hidden
+					transition-delay: $trans-delay-default
+
+					opacity: .7
+
+					z-index: 1
+					position: absolute
+
+				// - wrap-infos
+				.wrap-description
+					background: none
+					width: 90%
+					height: 100%
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					background-visibility: hidden
+					transition-delay: $trans-delay-default
+
+					top: 0
+					left: 5%
+					right: 0
+					bottom: 0
+
+					z-index: 9
+					position: absolute
+
+					// - span category
+					.the-category
+						background: $tertiary-bg
+						width: 130px
+						height: 35px
+
+						margin: 15px 0
+						border: 1px solid $tertiary-bg
+						border-radius: 4px
+						
+						display: block
+
+						font-size: $small-size
+						font-weight: $font-light
+						color: $primary-bg
+						text-align: center
+						line-height: 2.1
+
+
+					// - title post
+					.title-post
+						width: 70%
+
+						font-size: $medium-size
+						font-weight: $font-regular
+						line-height: $text-size
+						text-align: left
+						text-decoration: none
+						color: $primary-bg
+
+						margin: 40px 0
+
+						position: relative
+
+						&:after
+							content: ''
+							background: $primary-bg
+							
+							width: 25%
+							height: 2px
+							
+							bottom: -10px
+							left: 0
+
+							display: block
+							opacity: .5
+							position: absolute
+					
+					// - date
+					.the-date
+						font-size: $small-size
+						font-weight: $font-light
+						color: $primary-bg
+						text-align: center
+
+						margin: 25px auto
+
+					
+					// #social-share
+					.social-share
+						right: 0
+						bottom: 0
+
+						position: absolute
+
+			.attachment-hover
+				transform: scale(1.4) rotate(10deg)
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				background-visibility: hidden
+				transition-delay: $trans-delay-default
+
+			// btns controll
+			.wrap-buttons-control
+				width: 180px
+				height: 60px
+
+				right: 0
+				bottom: 10px
+				position: absolute
+				display: none
+
+// --------------------------------------------------------------
+// # Contato - section contato
+// --------------------------------------------------------------
+#contato
+	@media #{$information-phone}
+		width: 100%
+		height: 840px
+
+		.section-wrapper
+			height: 100%
+
+		// - header
+		.header-section-secondary
+			width: 100%
+
+			text-align: center
+			margin-top: 90px
+
+			position: relative
+
+			// - title
+			.title
+				font-size: $medium-size
+				font-weight: $font-light
+				text-transform: uppercase
+				color: $primary-color
+				display: inline-block
+				margin: 25px auto
+				position: relative
+
+				&:after
+					content: ''
+					background: $primary-color
+					width: 100%
+					height: 1px
+					top: 50px
+					left: 0
+					opacity: .5
+					position: absolute
+
+		// - Body section
+		.wrapper-body
+			width: 100%
+			height: 540px
+
+			margin-top: 20px
+			position: relative
+
+			// - Wrapper botões
+			.wrapper-btns
+				width: 100%
+				height: 40px
+
+				margin: 15px auto
+
+				display: flex
+				align-items: center
+
+				position: relative
+
+				span
+					background: $primary-color
+
+					width: 50%
+					height: 100%
+
+					text-align: center
+					font-size: $small-size
+					color: $primary-bg
+					line-height: 3
+
+					opacity: .5
+
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					transition-delay: $trans-delay-default
+
+					&:first-child
+						border-top-left-radius: 3px
+						border-bottom-left-radius: 3px
+
+					&:last-child
+						border-radius: 0
+						border-top-right-radius: 3px
+						border-bottom-right-radius: 3px
+
+				
+				.active
+					opacity: 1
+					transition-timing-function: $trans-time-default
+					transition-duration: $trans-duration-default
+					transition-delay: $trans-delay-default
+
+
+
+			
+
+			// - Wrapper form
+			.wrapper
+				width: 100%
+				height: 520px
+
+				margin: 20px auto
+
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+
+				left: -120%
+				position: absolute
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+
+				// form
+				
+				.title-box
+					font-size: $text-size
+					font-weight: $font-light
+
+					margin: 25px auto					
+
+				.icon
+					font-size: $menu-size
+
+					opacity: .5
+					margin: 15px auto
+
+				form
+					width: 90%
+					height: 100%
+
+					margin: 10px auto
+					// - container do input
+					.wrapper-input
+						width: 95%
+						height: 80px
+						margin: 10px auto
+						display: block
+
+						label
+							width: 100%
+							display: block
+							margin: 5px auto
+
+							font-size: $very-small-size
+							font-weight: $font-regular
+							color: $primary-light-color
+							text-transform: uppercase
+
+							display: none
+						
+						input
+							width: 80%
+							height: 40px
+							
+							border: none
+							border-bottom: 1px solid $tertiary-bg
+							
+							display: block
+							margin: 0 auto
+
+							outline: none
+							opacity: .7
+
+							color: $primary-color
+							text-align: center						
+
+							transition-timing-function: $trans-time-default
+							transition-duration: $trans-duration-default
+							transition-delay: $trans-delay-default
+
+							&:hover,
+							&:focus
+								width: 100%
+								opacity: 1
+
+								transition-timing-function: $trans-time-default
+								transition-duration: $trans-duration-default
+								transition-delay: $trans-delay-default
+
+					.wrapper-textarea
+						width: calc(100% - 20px)
+						margin: 5px auto
+						display: block
+
+						label
+							width: 100%
+							display: block
+							margin: 25px auto
+
+							font-size: $very-small-size
+							font-weight: $font-regular
+							color: $primary-light-color
+							text-transform: uppercase
+
+							display: none
+
+						textarea
+							width: 100%
+							height: 90px
+
+							border: none
+							border-bottom: 1px solid $tertiary-bg
+
+							outline: none
+							resize: none							
+							opacity: .4
+
+							color: $primary-color
+							text-align: center							
+
+							transition-timing-function: $trans-time-default
+							transition-duration: $trans-duration-default
+							transition-delay: $trans-delay-default
+
+							&:hover
+								opacity: 1
+
+								transition-timing-function: $trans-time-default
+								transition-duration: $trans-duration-default
+								transition-delay: $trans-delay-default
+
+					// - botão enviar
+					.btn-send
+						background: $tertiary-bg
+						
+						width: 50px
+						height: 50px
+						
+						margin: 30px auto
+						border: none
+						border-radius: 4px
+						display: block
+						
+						font-size: $text-size
+						text-transform: uppercase
+						color: $primary-bg
+						
+
+			// - Informações
+			.infos
+				background: $primary-color
+				border-radius: 3px
+
+				.title-box
+					display: none
+
+				.list-of-infos
+					width: 100%
+					height: auto
+					margin: 10px auto
+
+					// - <li>
+					.item-info
+						width: 95%
+						height: 100px
+						
+						text-align: left
+
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+
+						margin: 5px auto
+
+						position: relative
+
+						&:after
+							content: ''
+
+							background: $primary-bg
+							opacity: .3
+
+							width: 120px
+							height: 1px
+
+							bottom: -1px
+							left: 55px
+							position: absolute
+
+						// - icon
+						.icon
+							width: 30px
+							height: 20px
+
+							font-size: $menu-size
+							text-align: center
+							color: $primary-bg
+
+							margin: auto 10px
+							position: absolute
+
+						// - span title
+						.title-info
+							width: 200px
+
+							font-size: $very-small-size
+							font-weight: $font-bold
+							text-transform: uppercase
+							color: $primary-bg
+
+							margin-top: 20px
+							margin-left: 55px
+							
+							display: block
+							
+
+						// - info
+						.info
+							width: 200px
+
+							font-size: $small-size
+							font-weight: $font-light
+							color: $primary-bg
+							
+							display: block
+
+							margin-bottom: 10px
+							margin-left: 55px
+
+			.enable
+				left: 0
+
+				transition-timing-function: $trans-time-default
+				transition-duration: $trans-duration-default
+				transition-delay: $trans-delay-default
+
+			// #social-share
+			.social-share
+				width: 250px
+				height: 60px
+				margin: 10px auto
+				display: flex
+				justify-content: space-between
+
+				.social-item
+					background: $primary-light-color
+					width: 50px
+					height: 50px
+					margin: 5px auto
+					text-align: center
+					cursor: pointer
+
+					.icon
+						font-size: $text-size
+						color: $primary-bg
+						margin: 16px auto
+
+	@media #{$information-desktop}
+		background: $primary-bg
+		background-size: cover
+		width: 100%
+		height: 100vh
+		min-height: 768px
+		position: relative
+
+		&:before
+			// content: ''
+			background: url('../../img/cross-stripes.png')
+			width: 100%
+			height: 100%
+			opacity: .5
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			position: absolute
+
+		.section-wrapper
+			height: 100%
+
+		// - header
+		.header-section-secondary
+			width: 1024px
+			height: 70px
+			top: 100px
+
+			margin: 0 auto
+			position: relative
+
+			text-align: left
+
+			// - title
+			.title
+				font-size: $extra-size
+				font-weight: $font-regular
+				text-transform: lowercase
+				text-align: center
+				color: $four-color
+				display: block
+				margin-top: 25px
+				margin-right: 25px
+
+
+			// - Subtitle
+			.subtitle
+				font-size: $extra-size
+				font-weight: $font-bold
+				text-transform: uppercase
+				color: $primary-color
+				top: 20px
+				display: inline-block
+				position: relative
+
+		// - Body section
+		.wrapper-body
+			background: none
+
+			width: 100%
+			height: 490px
+			
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			border-radius: 4px
+
+			margin: 0 auto
+			top: 140px
+			opacity: .9
+
+			position: relative
+
+			
+			// - Wrapper botões
+			.wrapper-btns
+				display: none
+
+
+			// - Wrapper form
+			.wrapper
+				height: 100%
+
+				margin: 0 auto
+
+				display: flex
+				flex-wrap: wrap
+			
+			.contact
+				width: 700px
+				
+				.title-box
+					font-size: $menu-size
+					font-weight: $font-regular
+					color: $primary-color
+					
+					margin: 10px 0
+
+					top: 15px
+					left: 30px
+					position: absolute
+
+				.icon-head
+					font-size: $medium-size
+					color: $primary-color
+
+					right: 370px
+					top: 20px
+
+					position: absolute
+					opacity: .5
+
+
+				form
+					width: 95%
+					height: 80%
+					
+					margin: 0 auto
+					margin-top: 15%
+
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+
+					position: relative
+
+					// - container do input
+					.wrapper-input
+						width: calc(100% / 2 - 25px)
+						height: 60px
+						margin: 10px
+
+						label
+							width: 100%
+							display: block
+							margin: 5px auto
+
+							font-size: $very-small-size
+							font-weight: $font-regular
+							color: $primary-color
+							text-transform: uppercase
+						
+						input
+							width: 100%
+							height: 40px
+
+							border: none
+							border-bottom: 1px solid $primary-color
+
+							outline: none
+
+							font-size: $small-size
+							color: $primary-color
+							
+
+					.wrapper-textarea
+						width: calc(100% - 20px)
+						height: 240px
+						margin: 5px auto
+						display: block
+
+						label
+							width: 100%
+							display: block
+							margin: 25px auto
+
+							font-size: $very-small-size
+							font-weight: $font-regular
+							color: $primary-color
+							text-transform: uppercase
+
+						textarea
+							width: 80%
+							height: 180px
+							border: none
+							border-bottom: 1px solid $primary-color
+
+							outline: none
+
+							font-size: $small-size
+							color: $primary-color
+
+							resize: none
+
+					// - botão enviar
+					.btn-send
+						background: none
+
+						width: 50px
+						height: 50px
+
+						margin: 10px auto
+						border: 1px solid $primary-color
+						border-radius: 4px
+						
+						font-size: $menu-size
+						text-transform: uppercase
+						color: $primary-color
+
+						right: 20px
+						bottom: 20px
+						position: absolute
+
+			// - Informações
+			.infos
+				background: none
+
+				width: 100%
+				height: 100%
+				
+				position: relative
+
+				.title-box
+					font-size: $menu-size
+					font-weight: $font-regular
+					color: $primary-bg
+					
+					margin: 10px 0
+
+					top: 15px
+					left: 30px
+					position: absolute
+
+				.list-of-infos
+					width: 100%
+					height: auto
+
+					margin: auto auto
+					margin-top: 80px
+					
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: space-between
+
+					// - <li>
+					.item-info
+						width: auto
+						height: 250px
+						margin: 5px auto
+
+						border-right: 1px solid $secondary-bg
+
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+
+						perspective: 350px
+						position: relative
+
+						transition: $transition-basic
+
+						&:hover
+							box-shadow: 0px 0px 1px $tertiary-color
+							
+							transition: $transition-basic
+
+						&:last-child
+							border: none
+
+						// - icon
+						.icon
+							background: $tertiary-color
+
+							width: 60px
+							height: 60px
+
+							font-size: $medium-size
+							text-align: center
+							color: $primary-bg
+							line-height: 2.2
+
+							border-radius: 100%
+
+							margin: 25px auto
+							display: block
+
+						// - span title
+						.title-info
+							width: 100%
+
+							font-size: $very-small-size
+							font-weight: $font-bold
+							color: $tertiary-color
+							text-align: center
+							text-transform: uppercase
+							letter-spacing: 2px
+
+							margin: 15px auto
+							display: block
+
+							position: relative
+
+							&:after
+								content: ''
+								background: $tertiary-color
+
+								width: 120px
+								height: 1px
+
+								left: calc(100% / 2 - 60px)
+								bottom: -15px
+
+								position: absolute
+
+						// - info
+						.info
+							width: 100%
+
+							font-size: $text-size
+							font-weight: $font-light
+							color: $tertiary-color
+							text-align: center
+							letter-spacing: 2px
+
+							margin: 10px auto
+							display: block
+
+			// #social-share
+			.social-share
+				width: 250px
+				height: 60px
+				display: flex
+				justify-content: space-between
+
+				.social-item
+					background: $primary-light-color
+					width: 50px
+					height: 50px
+					margin: 5px auto
+					text-align: center
+					cursor: pointer
+
+					.icon
+						font-size: $text-size
+						color: $primary-bg
+						margin: 16px auto
+
+
+// --------------------------------------------------------------
+// # Footer - 
+// --------------------------------------------------------------
+#footer
+	@media #{$information-phone}
+		background: $primary-color
+		width: 100%
+		height: 280px
+
+		.container_footer
+			display: flex
+			flex-wrap: wrap-reverse
+			height: 100%
+
+			.wrapper-footer
+				width: 100%
+				height: calc(100% / 3 - 15px)
+				margin: 8px auto
+				align-self: center
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+
+				// - Copyright
+				.copyright
+					width: 100%
+
+					font-size: $small-size
+					font-weight: $font-regular
+					line-height: $small-size
+					text-align: center
+					color: $primary-bg
+
+					display: block
+
+				// - newsletter
+				.title-newsletter
+					width: 100%
+					font-size: $medium-size
+					font-weight: $font-regular
+					text-align: center
+					color: $primary-bg
+					margin: 4px 0
+				
+				.newsletter-input
+					background: none
+					width: 95%
+					height: 40px
+
+					border: none
+					border-bottom: 2px solid $primary-light-color
+					border-radius: 4px
+					
+					margin: 4px auto
+					padding: 0 10px
+					outline: none
+
+					color: $primary-bg
+					text-align: center
+
+				// #social-share
+				.social-share
+					width: 250px
+					height: 60px
+					display: flex
+					margin: auto auto
+					justify-content: space-between
+
+					.social-item
+						background: none
+						
+						width: 30px
+						height: 30px
+
+						margin: 5px auto
+						border: none 
+
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 16px auto
+
+
+	@media #{$information-desktop}
+		background: $primary-color
+		width: 100%
+		height: 280px
+
+		.container_footer
+			display: flex
+			flex-wrap: wrap
+			height: 100%
+
+			.wrapper-footer
+				width: calc(100% / 3 - 15px)
+				margin: 0 auto
+				align-self: center
+
+				// - Copyright
+				.copyright
+					font-size: $small-size
+					font-weight: $font-regular
+					text-align: center
+					color: $primary-bg
+
+				// - newsletter
+				.title-newsletter
+					font-size: $medium-size
+					font-weight: $font-regular
+					color: $primary-bg
+					margin: 10px 0
+				
+				.newsletter-input
+					background: none
+					width: 290px
+					height: 40px
+					border: 1px solid $primary-light-color
+					border-radius: 4px
+					margin: 10px 0
+					padding: 0 10px
+					outline: none
+
+				// #social-share
+				.social-share
+					width: 250px
+					height: 60px
+					display: flex
+					justify-content: space-between
+
+					.social-item
+						background: $primary-light-color
+						width: 50px
+						height: 50px
+						margin: 5px auto
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 16px auto
+
+
+
+
+// --------------------------------------------------------------
+// # PostBlog - Estilos para os posts do blog
+// --------------------------------------------------------------
+#post-blog
+	@media #{$information-phone}
+		width: 100%
+		height: auto
+		display: block
+
+		// - background cover
+		.header-post
+			width: 100%
+			height: 590px
+			margin: 0		
+			overflow: hidden
+			display: flex
+			position: relative
+
+			&:before
+				content: ''
+				background: $primary-color
+				width: 100%
+				height: 100%
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				opacity: .5
+				z-index: 1
+				position: absolute
+		
+			.attachment-awp-cover
+				width: 100%
+				position: absolute
+
+			// - wrap title header
+			.wrap-title	
+				min-height: 250px
+				align-self: center
+				z-index: 9
+
+
+				// - Categoria
+				.the-category
+					background: $accent-color
+					width: 80px
+					padding: 10px 15px
+					margin: 15px auto
+					border-radius: 3px
+					display: block
+					cursor: pointer
+
+					font-size: $small-size
+					color: $primary-bg
+					text-align: center
+
+
+				// - Titulo post
+				.title-post
+					font-size: $big-size
+					font-weight: $font-bold
+					text-align: center
+					color: $primary-bg
+					margin: 50px auto
+					position: relative
+
+				// - Line sep
+				.line-sep
+					background: $primary-bg
+					width: 180px
+					height: 2px
+					margin: 10px auto
+					display: block
+				
+				// - Data
+				.the-date
+					font-size: $small-size
+					font-weight: $font-regular
+					color: $primary-bg
+					text-align: center
+
+					margin: 25px auto
+					display: block
+
+
+				// #social-share 38 x 38px
+				.social-share
+					width: 250px
+					height: 60px
+					margin: 15px auto
+					display: flex
+					justify-content: space-between
+
+					.social-item
+						background: none
+						width: 38px
+						height: 38px
+						border: 1px solid $primary-bg
+						margin: 5px auto
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 10px auto
+
+				
+		
+		// - Post body
+		.post-body
+			width: 90%
+			height: auto
+			margin: 20px auto
+			display: block
+			position: relative
+
+			.content
+				
+				p
+					font-size: $text-size
+					line-height: $text-size
+					color: $primary-light-color
+					margin: 50px auto
+				// - Style images
+				.aligncenter
+					width: 100%
+					height: 100%
+					margin: 15px auto
+					display: block
+				
+				.alignright
+					width: 100%
+					height: 100%
+					margin: 15px auto
+					display: inline-block
+					float: right
+				
+				.alignleft
+					width: 100%
+					height: 100%
+					margin: 15px auto
+					display: inline-block
+					float: left
+
+
+	@media #{$information-desktop}
+		width: 100%
+		height: auto
+		display: block
+
+		// - background cover
+		.header-post
+			width: 100%
+			height: 590px
+			margin: 0		
+			overflow: hidden
+			display: flex
+			position: relative
+
+			&:before
+				content: ''
+				background: $primary-color
+				width: 100%
+				height: 100%
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				opacity: .5
+				z-index: 1
+				position: absolute
+		
+			.attachment-awp-cover
+				width: 100%
+				height: auto
+				position: absolute
+
+			// - wrap title header
+			.wrap-title	
+				min-height: 250px
+				align-self: center
+				z-index: 9
+
+
+				// - Categoria
+				.the-category
+					background: $accent-color
+					width: 140px
+					padding: 10px 15px
+					margin: 15px auto
+					border-radius: 3px
+					display: block
+					cursor: pointer
+
+					font-size: $small-size
+					color: $primary-bg
+					text-align: center
+
+
+				// - Titulo post
+				.title-post
+					font-size: $big-size
+					font-weight: $font-bold
+					text-align: center
+					color: $primary-bg
+					margin: 50px auto
+					position: relative
+
+				// - Line sep
+				.line-sep
+					background: $primary-bg
+					width: 180px
+					height: 2px
+					margin: 10px auto
+					display: block
+				
+				// - Data
+				.the-date
+					font-size: $small-size
+					font-weight: $font-regular
+					color: $primary-bg
+					text-align: center
+
+					margin: 25px auto
+					display: block
+
+
+				// #social-share 38 x 38px
+				.social-share
+					width: 250px
+					height: 60px
+					margin: 15px auto
+					display: flex
+					justify-content: space-between
+
+					.social-item
+						background: none
+						width: 38px
+						height: 38px
+						border: 1px solid $primary-bg
+						margin: 5px auto
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 10px auto
+
+				
+		
+		// - Post body
+		.post-body
+			width: 960px
+			height: auto
+			margin: 50px auto
+			display: block
+			position: relative
+
+			.content
+				
+				p
+					font-size: $text-size
+					line-height: $text-size
+					color: $primary-light-color
+					margin: 50px auto
+				// - Style images
+				.aligncenter
+					margin: 15px auto
+					display: block
+				
+				.alignright
+					margin: 15px 0 15px 15px
+					display: inline-block
+					float: right
+				
+				.alignleft
+					margin: 15px 15px 0 15px
+					display: inline-block
+					float: left
+
+
+// --------------------------------------------------------------
+// # Post Produto - Estilos para os produtos
+// --------------------------------------------------------------
+#post-produto
+	@media #{$information-phone}
+		width: 100%
+		height: auto
+
+		// - header post
+		.header-post
+			width: 100%
+			min-height: 100vh
+			position: relative
+
+			&:before
+				content: ''
+				background: $primary-color
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				opacity: .6
+				position: absolute
+
+
+			// - Thumb
+			.attachment-awp-cover
+				width: 100%
+				height: 100%
+				margin-top: 70px
+				margin-right: 20px
+
+			
+			// - Wrapper infos
+			.wrapper-right
+				width: 100%
+				height: 480px
+				margin-top: 30px
+				left: 0px
+				position: absolute
+
+
+				// - title
+				.title-product
+					font-size: $medium-size
+					font-weight: $font-bold
+					text-align: center
+					color: $primary-bg
+					margin: 25px 0
+					display: block
+
+
+				// - Desc list
+				.desc-list
+					width: 330px
+					height: 190px
+					margin: 55px 0
+					display: none
+
+					.desc-item
+						width: 100%
+						height: 55px
+						margin: 10px 0
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+
+						.icon
+							width: 50px
+							text-align: center
+							font-size: $text-size
+							color: $primary-bg
+
+						.title-big			
+							font-size: $text-size
+							font-weight: $font-regular
+							color: $primary-bg
+							margin-left: 15px
+						
+						.pag
+							font-size: $small-size
+							color: $primary-bg
+							display: block
+							margin-left: 65px
+
+						a
+							font-size: $small-size
+							font-weight: $font-regular
+							text-transform: lowercase
+							color: $primary-bg
+							margin: 0 15px
+
+				
+				// - Btn big
+				.btn-big
+					background: $accent-color
+					width: 230px
+					height: 60px
+					margin: 15px auto
+					font-size: $text-size
+					font-weight: $font-light
+					text-transform: uppercase
+					text-align: center
+					line-height: 3.3
+					color: $primary-bg
+
+					display: block
+
+				// #social-share
+				.social-share
+					width: 250px
+					height: 60px
+					margin-top: 25px
+					// display: flex
+					display: none
+					justify-content: space-between
+
+					.social-item
+						background: none
+						width: 40px
+						height: 40px
+						margin: 5px auto
+						border: 1px solid $primary-bg
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 12px auto
+
+
+			// - Btn more
+			.btn-more-container
+				width: 150px
+				height: 90px
+				margin: 20px auto
+				top: 180px
+				display: block
+				position: relative
+
+				text-align: center
+
+
+				// - title
+				.title
+					font-size: $small-size
+					color: $primary-bg
+					margin: 10px auto
+					display: block
+
+				// - icon
+				.icon
+					display: block
+					cursor: pointer
+
+					font-size: $text-size
+					color: $primary-bg
+					opacity: .5
+
+		// - Capa
+		.cover
+			background: $bg-cover-loja
+			background-size: cover
+			width: 100%
+			height: 100%
+
+
+		// - Post body
+		.post-body
+			height: auto
+			margin-top: 50px
+			margin-bottom: 50px
+
+			// - Resumo
+			.wrapper-excerpt
+				font-size: inherit
+				font-size: $text-size
+				font-weight: $font-light
+				line-height: $text-size
+				text-transform: uppercase
+				text-align: center
+				color: $primary-color
+				margin: 25px auto
+
+			// - Conteúdo
+			.wrapper-content
+				font-size: inherit
+				overflow-x: hidden
+
+
+				// Galeria de fotos
+				.gallery
+					width: 100%
+					height: 380px
+					margin: 80px auto
+					display: flex
+					flex-wrap: wrap
+
+					// itens da galeria
+					.gallery-item
+						width: 100%
+						height: auto
+						margin: auto
+						position: absolute
+
+						img
+							width: 100%
+							height: 300px
+
+						//  Descrição da imagem
+						.gallery-caption
+							background: $secondary-bg
+							width: 100%
+							height: 40px
+							padding: 15px 0
+
+							font-size: $small-size
+							font-weight: $font-light
+							color: $primary-light-color
+							text-align: center
+
+
+				.wrap-infos
+					background: none
+					width: 290px
+					height: 290px
+					padding: 20px
+					top: 840px
+					right: 5px
+					border: 1px solid $secondary-bg
+					position: absolute
+					display: none
+
+					// <ul>
+					.desc-list
+						margin: 15px auto
+						
+						.desc-item
+							width: 100%
+							height: 45px
+							margin: 5px 0
+							display: flex
+							flex-wrap: wrap
+
+							.icon
+								width: 50px
+								text-align: center
+								font-size: $text-size
+								color: $accent-color
+
+							.title-big			
+								font-size: $text-size
+								font-weight: $font-bold
+								color: $primary-light-color
+								margin-left: 15px
+								opacity: .8
+							
+							.pag
+								font-size: $small-size
+								color: $primary-light-color
+								display: block
+								margin-left: 65px
+
+					
+					// - Btn big
+					.btn-big
+						background: $accent-color
+						width: 220px
+						height: 50px
+						margin: 15px 0
+						margin-left: 15px
+						font-size: $small-size
+						font-weight: $font-light
+						text-transform: uppercase
+						text-align: center
+						line-height: 3.5
+						color: $primary-bg
+
+						display: block
+
+				// - Diferenciais
+				blockquote
+					background: $secondary-bg
+					width: 100%
+					height: 350px
+					margin: 50px auto
+					padding: 50px 0
+					display: flex
+					flex-wrap: wrap
+					position: relative
+
+					&:before
+						content: ''
+						background: $secondary-bg
+						width: 100%
+						height: 100%
+						top: 0
+						left: -100%
+						position: absolute
+
+					&:after
+						content: ''
+						background: $secondary-bg
+						width: 100%
+						height: 100%
+						top: 0
+						right: -100%
+						position: absolute
+
+					div
+						width: 100%
+						margin: 35px auto
+						padding: 0
+						top: 0
+						position: absolute
+
+						h5
+							font-size: $text-size
+							font-weight: $font-bold
+							text-transform: uppercase
+							color: $primary-color
+							margin: 25px auto
+							display: block
+
+							img
+								display: block
+								margin: 25px auto
+						
+						p
+							width: auto
+							margin: 15px auto
+
+				
+				// h3
+				h3
+					font-size: $menu-size
+					color: $primary-color
+					margin: 20px auto
+
+				// <p>
+				p
+					width: 100%
+					font-size: $text-size
+					font-weight: $font-light
+					line-height: $text-size
+					color: $primary-light-color
+					margin: auto
+
+	@media #{$information-desktop}
+		width: 100%
+		height: auto
+
+		// - header post
+		.header-post
+			width: 100%
+			min-height: 100vh
+			position: relative
+
+			&:before
+				content: ''
+				background: $primary-color
+				top: 0
+				right: 0
+				bottom: 0
+				left: 0
+				opacity: .6
+				position: absolute
+
+
+			// - Thumb
+			.attachment-awp-cover
+				width: 685px
+				height: 580px
+				margin-top: 70px
+				margin-right: 20px
+
+			
+			// - Wrapper infos
+			.wrapper-right
+				width: 400px
+				height: 510px
+				top: 150px
+				right: 0px
+				position: absolute
+
+
+				// - title
+				.title-product
+					font-size: $big-size
+					font-weight: $font-bold
+					color: $primary-bg
+					margin: 25px 0
+					display: block
+
+
+				// - Desc list
+				.desc-list
+					width: 330px
+					height: 190px
+					margin: 55px 0
+
+					.desc-item
+						width: 100%
+						height: 55px
+						margin: 10px 0
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+
+						.icon
+							width: 50px
+							text-align: center
+							font-size: $text-size
+							color: $primary-bg
+
+						.title-big			
+							font-size: $text-size
+							font-weight: $font-regular
+							color: $primary-bg
+							margin-left: 15px
+						
+						.pag
+							font-size: $small-size
+							color: $primary-bg
+							display: block
+							margin-left: 65px
+
+						a
+							font-size: $small-size
+							font-weight: $font-regular
+							text-transform: lowercase
+							color: $primary-bg
+							margin: 0 15px
+
+				
+				// - Btn big
+				.btn-big
+					background: $accent-color
+					width: 280px
+					height: 60px
+					margin: 15px 0
+					margin-left: 20px
+					font-size: $text-size
+					font-weight: $font-light
+					text-transform: uppercase
+					text-align: center
+					line-height: 3.3
+					color: $primary-bg
+
+					display: block
+
+				// #social-share
+				.social-share
+					width: 250px
+					height: 60px
+					margin-top: 25px
+					display: flex
+					justify-content: space-between
+
+					.social-item
+						background: none
+						width: 40px
+						height: 40px
+						margin: 5px auto
+						border: 1px solid $primary-bg
+						text-align: center
+						cursor: pointer
+
+						.icon
+							font-size: $text-size
+							color: $primary-bg
+							margin: 12px auto
+
+
+			// - Btn more
+			.btn-more-container
+				width: 150px
+				height: 90px
+				margin: 20px auto
+				display: block
+				position: relative
+
+				text-align: center
+
+
+				// - title
+				.title
+					font-size: $small-size
+					color: $primary-bg
+					margin: 10px auto
+					display: block
+
+				// - icon
+				.icon
+					background: $primary-bg
+					width: 55px
+					height: 55px
+					border-radius: 100%
+					margin: 20px auto
+					display: block
+					cursor: pointer
+
+					font-size: $text-size
+					line-height: 3
+					color: $primary-color
+					opacity: .5
+
+		// - Capa
+		.cover
+			background: $bg-cover-loja
+			background-size: cover
+			width: 100%
+			height: 100%
+
+
+		// - Post body
+		.post-body
+			height: auto
+			margin-top: 50px
+			margin-bottom: 50px
+
+			// - Resumo
+			.wrapper-excerpt
+				font-size: inherit
+				font-size: $medium-size
+				font-weight: $font-light
+				line-height: $medium-size
+				text-transform: uppercase
+				text-align: center
+				color: $primary-color
+				margin: 25px auto
+
+			// - Conteúdo
+			.wrapper-content
+				font-size: inherit
+
+
+				// Galeria de fotos
+				.gallery
+					width: 100%
+					height: 380px
+					margin: 80px auto
+					display: flex
+					flex-wrap: wrap
+
+					// itens da galeria
+					.gallery-item
+						width: calc(100% / 3 - 30px)
+						height: 250px
+						margin: 10px 15px
+
+						img
+							width: 100%
+							height: 300px
+
+						//  Descrição da imagem
+						.gallery-caption
+							background: $secondary-bg
+							width: 100%
+							height: 40px
+							padding: 15px 0
+
+							font-size: $small-size
+							font-weight: $font-light
+							color: $primary-light-color
+							text-align: center
+
+
+				.wrap-infos
+					background: none
+					width: 270px
+					height: 290px
+					padding: 20px
+					top: 840px
+					right: -65px
+					border: 1px solid $secondary-bg
+					position: absolute
+
+					// <ul>
+					.desc-list
+						margin: 15px auto
+						
+						.desc-item
+							width: 100%
+							height: 45px
+							margin: 5px 0
+							display: flex
+							flex-wrap: wrap
+
+							.icon
+								width: 50px
+								text-align: center
+								font-size: $text-size
+								color: $accent-color
+
+							.title-big			
+								font-size: $text-size
+								font-weight: $font-bold
+								color: $primary-light-color
+								margin-left: 15px
+								opacity: .8
+							
+							.pag
+								font-size: $small-size
+								color: $primary-light-color
+								display: block
+								margin-left: 65px
+
+					
+					// - Btn big
+					.btn-big
+						background: $accent-color
+						width: 220px
+						height: 50px
+						margin: 15px 0
+						margin-left: 15px
+						font-size: $small-size
+						font-weight: $font-light
+						text-transform: uppercase
+						text-align: center
+						line-height: 3.5
+						color: $primary-bg
+
+						display: block
+
+				// - Diferenciais
+				blockquote
+					background: $secondary-bg
+					width: 100%
+					height: 440px
+					margin: 50px auto
+					padding: 50px 0
+					display: flex
+					flex-wrap: wrap
+					position: relative
+
+					&:before
+						content: ''
+						background: $secondary-bg
+						width: 100%
+						height: 100%
+						top: 0
+						left: -100%
+						position: absolute
+
+					&:after
+						content: ''
+						background: $secondary-bg
+						width: 100%
+						height: 100%
+						top: 0
+						right: -100%
+						position: absolute
+
+					div
+						width: calc(100% / 3 - 50px)
+						margin: 35px 10px
+						padding: 0 15px
+
+						h5
+							font-size: $text-size
+							font-weight: $font-bold
+							text-transform: uppercase
+							color: $primary-color
+							margin: 25px auto
+							display: block
+
+							img
+								display: block
+								margin: 25px auto
+						
+						p
+							width: auto
+							margin: 15px auto
+
+				
+				// h3
+				h3
+					font-size: $menu-size
+					color: $primary-color
+					margin: 20px auto
+
+				// <p>
+				p
+					width: 75%
+					font-size: $text-size
+					font-weight: $font-light
+					line-height: $text-size
+					color: $primary-light-color
+					margin-top: 20px
+					margin-bottom: 20px
+					margin-right: 20px
+					margin-left: 0 
+
+	// - #como_comprar
+	#como-comprar
+		@media #{$information-phone}
+			background: $secondary-bg
+			width: 100%
+			height: 850px
+			padding: 20px 0
+			margin: 10px auto
+			
+
+			// wrapper
+			.wrapper-section
+				height: auto
+
+				// - Titulo
+				.title-section
+					font-size: $medium-size
+					font-weight: $font-bold
+					text-align: center
+					color: $primary-color
+					line-height: 1.6
+					margin: 25px auto
+
+				// - Desc seção
+				.text
+					font-size: $text-size
+					font-weight: $font-light
+					line-height: $text-size
+					line-height: $text-size
+					text-align: center
+					color: $primary-light-color
+					margin: 15px auto
+
+				// - <ul> 
+				.wrap-explanation
+					width: 100%
+					height: auto
+					margin: 50px auto
+					display: flex
+					flex-wrap: wrap
+
+					// - <li>
+					.exp-item
+						width: 100%
+						height: 70px
+						margin: 10px auto
+						justify-content: center
+						position: relative
+						
+
+						// - square
+						.mini-square
+							background: rgba( 0, 0, 0, .3 )
+							width: 40px
+							height: 40px
+							top: 5px
+							left: 0
+							display: inline-block
+							position: absolute
+							
+							font-size: $text-size
+							font-weight: $font-bold
+							text-align: center
+							color: $primary-light-color
+							line-height: 2.2
+
+					
+						// <p>
+						p
+							font-size: $text-small-size
+							font-weight: $font-light
+							line-height: $text-small-size
+							color: $primary-light-color
+
+							// margin-top: 5px
+							margin-left: 60px
+							display: inline-block
+
+
+				// Botão comprar
+				.btn-medium
+					background: $accent-color
+					width: 250px
+					height: 60px
+					border: none
+					margin: 15px auto
+					display: block
+
+					font-size: $text-small-size
+					font-weight: $font-light
+					text-align: center
+					text-transform: uppercase
+					line-height: 3.6
+					color: $primary-bg
+
+		@media #{$information-desktop}
+			background: $secondary-bg
+			width: 100%
+			height: 540px
+			padding: 20px 0
+			margin: 10px auto
+			
+
+			// wrapper
+			.wrapper-section
+				height: auto
+
+				// - Titulo
+				.title-section
+					font-size: $medium-size
+					font-weight: $font-bold
+					text-align: center
+					color: $primary-color
+					margin: 25px auto
+
+				// - Desc seção
+				.text
+					font-size: $text-size
+					font-weight: $font-light
+					line-height: $text-size
+					text-align: center
+					color: $primary-light-color
+					margin: 15px auto
+
+				// - <ul> 
+				.wrap-explanation
+					width: 840px
+					height: 250px
+					margin: 20px auto
+					display: flex
+					flex-wrap: wrap
+
+					// - <li>
+					.exp-item
+						width: calc(100% / 2 - 30px)
+						height: 100px
+						margin: 20px 15px
+						justify-content: center
+						position: relative
+						
+
+						// - square
+						.mini-square
+							background: rgba( 0, 0, 0, .3 )
+							width: 40px
+							height: 40px
+							top: 5px
+							left: 0
+							display: inline-block
+							position: absolute
+							
+							font-size: $text-size
+							font-weight: $font-bold
+							text-align: center
+							color: $primary-light-color
+							line-height: 2.2
+
+					
+						// <p>
+						p
+							font-size: $text-small-size
+							font-weight: $font-light
+							line-height: $text-small-size
+							color: $primary-light-color
+
+							// margin-top: 5px
+							margin-left: 60px
+							display: inline-block
+
+
+				// Botão comprar
+				.btn-medium
+					background: $accent-color
+					width: 250px
+					height: 60px
+					border: none
+					margin: 15px auto
+					display: block
+
+					font-size: $text-small-size
+					font-weight: $font-light
+					text-align: center
+					text-transform: uppercase
+					line-height: 3.6
+					color: $primary-bg

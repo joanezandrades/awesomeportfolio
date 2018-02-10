@@ -1,0 +1,79 @@
+#1 - Correções Layout
+
+@HOMEPAGEBLOG - #URGENTE
+    - Desenhar novo menu fixo na home               - Design(PRONTO 01:20) (Layout PRONTO 10:36)
+    - @referências
+        - https://demo.curlythemes.com/theatrewp/
+        - https://www.hermanns.com/
+    
+    - Desenhar novo nav dos sliders                  - Design(PRONTO 01:20) (Layout PRONTO 10:40)
+     - @referências
+        - http://10ani.camptechnical.ro/
+    
+    - Background image                               - Design(PRONTO 01:20) (Layout PRONTO 10:40)
+     - Procurar referências para melhoria
+      - O background deve ter cores neutras e claras
+
+
+@HOMEPAGELOJA - #IMPORTANTE
+    - Criar svg com icons de produtos, loja, shop etc...
+    - Adicionar botões de informações: Como comprar, resumo, Instalação e garantia
+    - 
+
+@HOMEPAGEPERFIL - #IMPORTANTE
+    - Desenhar home de perfil do freelancer
+        - @Informações importantes
+            - Titulo de apresentação                                - 
+            - Informações básicas de conhecimento do profissional   
+            - formas de contato
+
+
+
+@Serviços   - #IMPORTANTE
+    - Background
+     - Testar um background svg sem muita cor e que ocupe o espaço todo
+     - @referências
+        - 
+
+@Portfolio  - #URGENTE 
+    - Background                                        - (Layout PRONTO 12:00)   
+     - Adicionar background linear na seção inteira 
+        @linear-gradient(to bottom,#1f223a,#302740)
+
+@Loja   - #IMPORTANTE
+    - Adicionar botões de:
+     - Informações de como comprar
+     - Informações de instalação
+     - Criar esses conteúdos de forma resumida e que caibam em um espaço pequeno
+     - 
+
+@BLOG   - #IMPORTANTE                  
+    - Aplicar correções salvas na jpg                   - (Layout PRONTO 12:00)  
+     @correcoes-blog-2.1.jpg        
+
+@CONTATO  - #URGENTE 
+    - Ajustar o formulário desktop                       - (Layout PRONTO 12:00)  
+    - Testar background com svg transparente e em cores neutras
+
+@POSTS/PRODUTOS - #IMPORTANTE
+    - Corrigir chamada dos arquivos js nos posts
+    - Tirar overflow:hidden nos posts
+    - Corrigir chamada da categoria no header do post
+
+@Efeitos Versão 2.1
+    - Rolagem do site, aparição do conteúdo
+     - @referências
+        - https://mihajlovicnenad.com/shopkit-for-woocommerce/
+
+    - Rolagem do site: Efeito de transição das seções
+     - @referências
+        - http://www.coralinecolasse.fr/ (MENU)
+
+
+
+#2 - Correções e ajustes Configs
+
+
+
+#3 - Funções JS
+    - Mudar cor do menu fixo quando rolar a página

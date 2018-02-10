@@ -1,0 +1,26 @@
+﻿Awesom porfolio
+
+Correções e Novas Aplicações
+versão: 2.1
+
+Descrição: Melhorias no design da homepage e da seção de contato, melhorias no design dos título das seções(estão muito chamativos), criar função no functions.php que retorne os botões de compartilhamento
+Autor: Joanez Andrades
+
+#Homepage
+ - Agora vai ter fundo com cores ao invés de imagens.
+ - As informações do post não mudam de lugar, mas a imagem destacada agora passa a ter um tamanho médio e fica na direita.
+ @Base
+    - https://www.behance.net/gallery/54696589/Portfolio-Project ; homepage como exemplo
+
+#Serviços
+ - Melhorias no titulo da seção
+
+#Portfólio
+ - Melhorias no título e subtitulo da seção
+ - Adicionar botões de compartilhamento nos posts
+
+#Contato
+ - Adicionar bordas na direita das box de informação
+ - Alterar forma do shadow
+ - Alterar borda do bottom do titulo das box
+

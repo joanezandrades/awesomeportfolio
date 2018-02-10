@@ -1,0 +1,594 @@
+
+- Font-size                         - 03/07
+- Configuração das media queryes    - 03/07
+- Configuração do container         - 03/07
+
+/- #Header
+- header            | Pronto        - 03/07
+- Logo              | Pronto        - 03/07
+- Main-menu         | Estilizar     - 03/07
+- Menu-box          | Pronto        - 03/07
+- - Icon menu       | Pronto        - 03/07
+
+- fixed             | Pronto        - 03/07
+
+
+
+/- Section Home
+- homepage blog         | Pronto    - 03/07
+- - thumb bg            | Pronto    - 04/07 * Trabalhar melhor essa chamada de thumb cover
+- -  - Title            | Pronto    - 04/07
+- -  - Subttitle        | Pronto    - 04/07
+- - Botão link          | Pronto    - 04/07
+
+- homepage produto
+- - thumb bg            | PRONTO    - 12/07
+- - Image destaque      | PRONTO    - 12/07   
+- - - Title             | PRONTO    - 12/07
+- - - Excerpt           | PRONTO    - 12/07
+- - - Versão            | Retirada
+- - - Preço             | PRONTO    - 12/07
+- - - Botão link        | PRONTO    - 12/07
+
+
+- Menu slider           | PRONTO    - 04/07
+- - menu-item           | PRONTO    - 04/07
+- - - bar               | PRONTO    - 04/07
+- - - nome post         | PRONTO    - 04/07
+
+/- Section services
+- Section               | PRONTO    - 04/07
+- - header-section      | PRONTO    - 04/07
+- - - Title             | PRONTO    - 04/07
+- - - Subtitle          | Não imprime
+
+- - wrapper-services    | PRONTO    - 04/07
+- - - Icon              | PRONTO    - 04/07
+- - - Title             | PRONTO    - 04/07
+- - - Excerpt           | PRONTO    - 04/07
+
+
+/ - Section Portfolio
+- Section
+- header-portfolio      | PRONTO    - 05/07
+- - Title               | PRONTO    - 05/07
+- - Subtitle            | PRONTO    - 05/07 ~~ Não imprime
+
+- wrapper-portfolio     | PRONTO    - 05/07
+- - box item portfolio  | PRONTO    - 05/07
+- - - thumb             | PRONTO    - 05/07
+- - - div infos         | PRONTO    - 05/07
+- - - - Title           | PRONTO    - 05/07
+- - - - botão link      | PRONTO    - 05/07
+- - - - Tags
+
+- div
+- - text                | PRONTO    - 05/07
+- - botão contato       | PRONTO    - 05/07
+
+
+
+/ - Section Loja
+- Section               | PRONTO    - 05/07
+- header-title          | PRONTO    - 05/07
+- Background section    | PRONTO    - 05/07
+- - thumb mockup        | PRONTO    - 05/07
+
+- Aside informações     |
+- - Título              | PRONTO    - 06/07
+- - Excerpt             | PRONTO    - 06/07
+- - icons               | PRONTO    - 06/07 *Próxima versão icons em svg
+- - Versao              | PRONTO    - 06/07 
+- - Preço               | PRONTO    - 06/07 
+- - TAgs                | PRONTO    - 06/07 
+- - Botão link          | PRONTO    - 06/07 
+
+- - social share        | PRONTO    - 06/07
+
+
+/ - Section blog
+- Section               | PRONTO    - 06/07
+- Header section        | PRONTO    - 06/07
+- - Title               | PRONTO    - 06/07 
+- - Subtitle            | PRONTO    - 06/07
+
+- Wrapper posts         | PRONTO    - 13/07
+
+- - Post destaque       | PRONTO    - 06/07
+- - - Categoria         | PRONTO    - 06/07 * Corrigir chamada
+- - - Title             | PRONTO    - 06/07 
+- - - Data              | PRONTO    - 06/07
+- - - Social bar        | PRONTO    - 06/07
+
+- - Posts normal
+- - - Categoria         | PRONTO    - 13/07
+- - - Social bar        | PRONTO    - 13/07
+- - - Title             | PRONTO    - 13/07
+
+
+/ - Section contato
+- section               | PRONTO    - 08/07
+- header section        | PRONTO    - 08/07
+- - Title               | PRONTO    - 08/07
+- - Subtitle            | PRONTO    - 08/07
+
+- Wrapper content       | PRONTO    - 08/07
+- - Formulário          | PRONTO    - 08/07
+- - - labels            | PRONTO    - 08/07
+- - - inputs            | PRONTO    - 08/07
+- - - Botão enviar      | PRONTO    - 08/07
+
+
+**Criar essas informações via widget ou informações cadastradas diretas na seção contato --
+- - informações         | PRONTO    - 08/07
+- - - Endereço          | PRONTO    - 08/07
+- - - Mapa(link)        | PRONTO    - 08/07
+- - - Telefone          | PRONTO    - 08/07
+- - - E-mail            | PRONTO    - 08/07
+- - - widget social bar | PRONTO    - 08/07
+
+
+/ - Footer
+- Copyright             | PRONTO    - 08/07
+- Campo newsletter      | PRONTO    - 08/07
+- Social widget         | PRONTO    - 08/07
+
+
+/ - SingleBlog
+- Header post           | PRONTO    - 09/07
+- - Full background     | PRONTO    - 09/07    
+- - Infos               | PRONTO    - 09/07
+- - Categoria           | PRONTO    - 09/07
+- - Titulo do post      | PRONTO    - 09/07
+- - Data                | PRONTO    - 09/07
+- - Social Share        | PRONTO    - 09/07
+
+
+/ - Menu
+- Container             | PRONTO    - 10/07
+- Menu item             | 
+- 
+
+/ - Single Loja
+- Header
+- - Background          | PRONTO    - 10/07
+- - thumb               | PRONTO    - 10/07
+- - Titulo              | PRONTO    - 10/07
+- - Informações         | PRONTO    - 10/07
+- - Botão Link          | PRONTO    - 10/07
+- - Botão roll          | PRONTO    - 10/07
+- - Social Bar          | PRONTO    - 10/07
+
+
+- Post content
+- - Resumo              | Pronto    - 10/07
+- - Blockquote dif      | Pronto    - 10/07
+- - Texto               | Pronto    - 11/07
+- - Informações         | Pronto    - 11/07
+- - Galeria             | Pronto    - 11/07
+
+
+- Como comprar 
+- - Section             | PRONTO    - 11/07
+- - titulo              | PRONTO    - 11/07
+- - Subtitle            | PRONTO    - 11/07
+
+- - Wrap itens          | PRONTO    - 11/07
+- - - items             | PRONTO    - 11/07
+- - - Botão             | PRONTO    - 11/07 - Criar campo do link como meta tag
+
+
+
+Correções nas chamadas
+- Produtos
+- - Meta tag Versão     | Pronto - 12/07
+- - Meta tag Preço      | Pronto - 12/07
+- - Tags 
+- - Criar meta tag para link do produto no hotmart
+
+- Sections
+- - Meta tag Subtitle   | Pronto - 12/07 
+
+
+
+
+#1 - Corrigir chamada da categoria na seção de posts do blog e também na capa dos posts (
+    Criar um filtro da tag hook the_taxonomies() e pegar os itens necessários
+)
+#2 - Estilizar o segundo e terceiro post da seção blog      | PRONTO 13/07
+#3 - corrigir chamada das meta informações do contato. 	    | PRONTO 13/07
+#4 - Adicionar input para o link do hotmart na compra
+
+
+
+--- Correções 16/07/2017
+#1 - Estilizar subtitulo da seção serviços                                  | PRONTO
+#2 - Fixar o tamanho das seções em pixels.                                  | PRONTO
+#3 - Corrigir a chamada das tags na seção Loja, estilizar as tags.          | PRONTO
+#4 - Corrigir link do botão de contato na seção de portfolio                | PRONTO
+#5 - Adicionar funções de compartilhamento com redes sociais                |
+#6 - Corrigir chamada da categoria nas postagens da seção blog              | PRONTO - *Adicionar na próxima versão
+#8 - Estilizar o botão de detalhes do produto no post do projeto na loja    | PRONTO
+
+
+
+
+
+// - Layout Smartphone
+- Main header               | Pronto    18/07 10:20
+- - Logotipo                | Pronto    18/07 10:20
+- - Menu icon               | Pronto    18/07 10:20
+- - Main menu               | 
+
+- Homepage
+- - Post Blog               
+- - - cover thumb           | Pronto    18/07 10:20
+- - - Title post
+- - - Botão link
+- - - menu sliders
+
+- - Post loja
+- - - Cover background
+- - - Thumb produto
+- - - Title produto
+- - - Botão Link
+
+- Serviços
+- - Header section          | Pronto    19/07 12:47
+- - - Title $medium-size    | Pronto    19/07 12:47
+- - - Divider               | Pronto    19/07 12:47    
+- - - Subtitle $medium-size | Pronto    19/07 12:47
+
+- - Serviços wrap           | Pronto    19/07 12:47
+- - - Service item          | Pronto    19/07 12:47
+- - - Icon                  | Pronto    19/07 12:47
+- - - Titulo                | Pronto    19/07 12:47
+- - - Texto                 | Pronto    19/07 12:47
+- - - Divider               | Pronto    19/07 12:47
+
+
+- Portfólio
+- - Header Section          | Pronto    20/07 01:17
+- - - Title                 | Pronto    20/07 01:17
+- - - Subtitle              | Pronto    20/07 01:17
+        
+- - Wrap portfolio          | Pronto    20/07 01:17
+- - - Thumb                 | Pronto    20/07 01:17
+- - - title                 | Pronto    20/07 01:17
+
+-- Wrap botão               | Pronto    20/07 01:17
+- Botão contato             | Pronto    20/07 01:17
+
+
+-/ Loja
+
+- - Background cover
+
+- - Header
+- Title                     | Pronto    20/07 13:17
+
+- - Wrap produto
+- thumb                     | Pronto    20/07 13:17
+- title                     | Pronto    20/07 13:17
+- Icon                      | Pronto    20/07 13:17
+- Info title                | Pronto    20/07 13:17
+- Tags                      | Pronto    20/07 13:17
+- Botão                     | Pronto    20/07 13:17
+- Social Bar                | Pronto    20/07 13:17
+
+
+
+-/ Blog
+- Header                    | Pronto    21/07 11:15
+- - Title                   | Pronto    21/07 11:15
+- - Subtitle                | Pronto    21/07 11:15
+
+- wrap posts                | Pronto    21/07 11:15
+- - Post thumb              | Pronto    21/07 11:15
+- - Categoria               | Pronto    21/07 11:15
+- - titulo                  | Pronto    21/07 11:15
+- - Data                    | Pronto    21/07 11:15
+- - Botão link              | Pronto    21/07 11:15
+- - Botão Share             | Pronto    21/07 11:15
+
+
+-/ Contato
+- Header
+- - Title                   | Pronto    21/07 16:10
+- - Subtitle                | Pronto    21/07 16:10
+
+- Body section
+- - Formulário              | Pronto    21/07 16:10
+- - - labels                | Pronto    21/07 16:10
+- - - Inputs                | Pronto    21/07 16:10
+- - - Textarea              | Pronto    21/07 16:10
+- - - Botão send            | Pronto    21/07 16:10    
+
+- - Wrap informações        | Pronto    21/07 16:10
+- - - icons                 | Pronto    21/07 16:10
+- - - titles                | Pronto    21/07 16:10
+- - - Informações           | Pronto    21/07 16:10
+
+- - botões 
+- - - Botão Formulário / Informações        | Pronto    21/07 16:10
+
+
+- Menu                      | Pronto    21/07 16:10
+- Rodapé                    | Pronto    21/07 16:10
+- Post blog                 | Pronto    21/07 16:10
+
+
+- Post Produto
+- - Cover                   | Pronto    21/07 19:35
+- - Thumb                   | Pronto    21/07 19:35
+- - Title                   | Pronto    21/07 19:35
+- - Informações             | Pronto    21/07 19:35
+- - Botão link              | Pronto    21/07 19:35
+
+- - Resumo                  | Pronto    21/07 19:35
+
+- - Blockquote              | Pronto    21/07 19:35
+- - Texto                   | Pronto    21/07 19:35
+- - Galeria de imagens      | Pronto    21/07 19:35
+- - Aside de informações no bottom  | Pronto    21/07 19:35
+
+
+
+// - Correçoes 25/07
+Destaque blog
+- Background linear opaco                       | Pronto    25/07 14:30
+- Data DD / MM / AAAA                           | Pronto    25/07 14:30
+- Titulo do post 36pt / Maven PRO medium        | Pronto    25/07 14:30
+- Social Share                                  | Pronto    25/07 14:30
+- Botão Leia o post 12pt                        | Pronto    25/07 14:30
+
+
+Destaque Produto
+- Background Linear opaco                       | Pronto    25/07 17:10
+- Background image                              | Corrigir
+- Thumb lado esquerdo                           | Pronto    25/07 17:10
+- Titulo                                        | Pronto    25/07 17:10
+- Resumo                                        | Pronto    25/07 17:10
+- Botão Conhecer                                | Pronto    25/07 17:10
+
+
+Homepage
+- Nav slider colado no left do container e em bolinhas 18x18 - active 25x25 | Pronto    25/07 14:45
+- Botão animado Scroll down - Apenas o icon é animado                       | Pronto    25/07 16:40
+
+
+// - Correçoes Desktop 26/07
+/ - Serviços section
+- Mostra apenas um título / 24pt - regular $primary-color       | Pronto 15:50
+- Layout serviço box                                            | Pronto 15:50                
+ - Icon/thumb  / 128x128                                        | Pronto 15:50
+ - Título / 14pt bold                                           | Pronto 15:50
+ - Divider no meio                                              | Pronto 15:50
+ - Texto / 12pt                                                 | Pronto 15:50
+
+- Nav slider
+ - Botões / 18x18                                               | Pronto 16:10
+ - active / sem background e com bordas de 1px                  | Pronto 16:10
+
+
+/ - Portfolio Section
+- Header 
+ - Titulo / regular                                             | Pronto 16:15
+ - subtitle / regular                                           | Pronto 16:15
+
+- wrap cases
+ - background / #0F1639                                         | Pronto 17:00
+ - Thumb item / 300x250px - opacity 30%                         | Pronto 17:00
+ - titulo / 18pt, $primary-bg, -20px top                        | Pronto 17:00
+ - wrap-tags / 60px, $primary-color, opacity: 30%               | Pronto 17:00
+  - tags / 10pt, $primary-bg                                    | Pronto 17:00
+ - Botão link / 100x55px / border-bottom $primary-bg/ icon link / -20px bottom      | Pronto 17:00
+
+ - case active                                                  | Pronto 17:00
+
+- Nav slider / Verificar se vai por slider nos itens ou em grupos maiores que 3
+ - Botões / 18x18 
+ - active / sem background e com bordas de 1px
+
+
+/ - Loja Section
+ - Background cover                                         | Pronto 18:30
+ - wrap thumb                                               | Pronto 18:30
+  - Thumb / 520 x 330px                                     | Pronto 18:30
+ - Wrap informações                                                             
+  - Titulo / 24pt regular $primary-bg                       | Pronto 18:30
+  - Resumo / 12pt regular $primary-bg                       | Pronto 18:30
+  - divider / opacity .6                                    | Pronto 18:30
+  - wrap metas 
+   - wrap price                                             
+    - icon bg / 48x48px - $primary-color - opacity .8       | Pronto 18:30
+    - icon / 32x32px - $primary-bg                          | Pronto 18:30
+    - price / 14pt bold $primary-bg                         | Pronto 18:30
+    - span price / 10pt light $primary-bg                   | Pronto 18:30
+
+  - wrap tags                                           
+   - icon bg / 48x48px - $primary-color - opacity .8        | Pronto 18:30
+   - icon / 32x32px - $primary-bg                           | Pronto 18:30
+   - span tags / 10pt light $primary-bg                     | Pronto 18:30
+
+
+
+// - Correçoes Desktop 27/07
+
+/- Blog section
+- header
+ - Colar no left do container
+ - Abaixo do logo
+
+- Wrap posts
+ - width: 100% do container; height: 510px
+ - Agora mostra 2 posts por vez
+ 
+ - Post destaque
+  - width: 780px; height: 360px
+  - thumb: transparency: .7
+  - Mask: transparency: .8
+  - categoria
+   - background: #0F1639; border: 1px solid #0F1639; border-radius: 4px
+   - font-size: 12pt
+   - width: 130px
+   - height: 35px
+  
+  - Titulo link
+   - font-size: 22pt
+   - font-weight: regular
+   - after: width: 220px height: 2px bottom: -15px
+
+   - Data
+    - font-family: roboto
+    - font-weight: light
+    - font-size: 12pt
+
+  - Social bar
+   - Right: 20px
+   - top: 20px
+
+ - Post 2 
+  - width: 340px
+  - height: 360px
+  - background: $primary-bg
+  - border: 1px solid ##0F1639
+  - border-radius: 4px
+  - Testar box-shadow
+
+  - categoria
+   - background: #0F1639; border: 1px solid #0F1639; border-radius: 4px
+   - font-size: 12pt
+   - width: 130px
+   - height: 35px
+
+  - Titulo link
+   - font-size: 18pt
+   - font-weight: regular
+
+  - Social bar
+   - Right: 20px
+   - bottom: 20px
+
+
+
+#correções 28/07/2017 01:15
+  Sliders Home
+  .post-wrap: display: flex; align-items: center;  
+  >.post-content: align-items: center
+    > img: height: 100%; tirar margins; z-index: 1
+    > .wrap-infos: height: auto; margin: auto
+
+  Section Portfolio
+  .portfolio-wrap: height: 540px; background: linear-gradient(to bottom, #1f223a, #302740)&before&after
+
+  Section blog
+  .blog-post: box-shadow: 4px 4px 20px -8px $tertiary-bg
+
+
+#correções 28/07/2017 14:26 ~
+
+  /- Section contato
+    background | maps.jpg / mask color      | PRONTO 14:35
+   
+    header
+    - Single title - alinhado com o form    | PRONTO 15:45
+
+    wrap-page
+    - wrap-contato : Background: $primary-bg                                | PRONTO 15:45
+      - Title | 16pt; roboto, $tertiary-color/$primary-color                | PRONTO 15:45
+      - icon | 28x28px; $tertiary-color/$primary-color                      | PRONTO 15:45
+      - form | display: flex; flex-wrap: wrap; justify-item: space-bettwen  | PRONTO 15:45
+      - label | 10pt; $primary/$tertiary-color                              | PRONTO 15:45
+      - input | 100% / 2 - 15px; 12pt                                       | PRONTO 15:45
+      - textarea | 100%                                                     | PRONTO 15:45
+
+      - send button | apenas o icone.                                       | PRONTO 15:45
+
+
+    - wrap-information
+      - Title | 16pt; roboto, $tertiary-color/$primary-color                | PRONTO 15:45
+      - icon | 24x24px ; $primary-bg                                        | PRONTO 15:45
+      - label | 10pt; $primary-bg; bold                                     | PRONTO 15:45
+      - span | 12pt; light                                                  | PRONTO 15:45
+
+      - botões social
+
+
+
+
+#Layout Mobile 01/08/2017
+/ - Header fixed - Função js para identificar a tela e aplicar a largura
+    - Logo: 130 x 75px
+    - Menu icon
+
+/ - Homepage
+  post-blog
+    - Full background                                         | Pronto 15:50
+    - Data: color $primary-bg, light, 12pt &after 100px       | Pronto 15:50
+    - Titulo: $primary-bg, 24pt, medium                       | Pronto 15:50
+  post-produto                        
+    - Background                                              | Pronto 15:50
+    - Thumb                                                   | Pronto 15:50
+    - title                                                   | Pronto 15:50
+    - Excerpt                                                 | Pronto 15:50
+    - botão                                                   | Pronto 15:50  
+
+/ - Nav slider
+    - btn-slider: 34x34px, border 2px no ativo                | Pronto 15:50
+
+
+/ - Serviços
+ Header
+ - Titulo seção: $primary-color, 18pt, text-align: center               | Pronto 01/08 11:00
+ 
+ Serviço Wrap                                                           | Configurar slider e botões
+ - Icon: 128x128px                                                      | Pronto 01/08 11:00
+ - Title service: $primary-color, 14pt, text-align: center              | Pronto 01/08 11:00
+ - Texto: $primary-light-color, 12pt, text-align: center                | Pronto 01/08 11:00
+ 
+ Nav slider - Construir botões/formas diferentes de troca dos items                        
+
+
+/ - Portfólio
+ Header
+ - Title: $primary-color, 22pt, regular &after 120x2px                  | Pronto 01/08 18:00   
+ - Subtitle: $primary-color, 22pt, medium                               | Pronto 01/08 18:00  
+
+ Wrap portfolio
+ - Background: $tertiary-bg                                             | Pronto 01/08 18:00  
+ - Title: $primary-bg, 16pt, medium                                     | Pronto 01/08 18:00  
+ - pic: 300 x 220px                                                     | Pronto 01/08 18:00  
+ - Botão link: 120x60px, 12pt, bold, border-bottom, $primary-bg icon    | Pronto 02/08 10:00
+
+/ - Nav slider
+ - btn-slider: 34x34px, border 2px no ativo                             | Pronto 02/08 10:00
+
+
+/ - Loja
+ - Background: bg.jpg + mask                                            | Pronto 02/08 11:00
+ - Thumb: 300 x 200px                                                   | Pronto 02/08 11:00
+ - Titulo: 18pt, medium, $primary-bg                                    | Pronto 02/08 11:00
+
+ Wrap infos
+ - icon: 48x48px, 32x32px                                               | Pronto 02/08 11:00
+ - Preço: 14pt, medium                                                  | Pronto 02/08 11:00
+ - Desc e tags: 10pt, regular                                           | Pronto 02/08 11:00
+ - Botão comprar: 150x50px, 10pt                                        | Pronto 02/08 11:00
+
+/ - Blog
+ header
+ - Title                                                                | Pronto 02/08 14:15
+ - subtitle                                                             | Pronto 02/08 14:15
+
+ Wrap posts
+ - thumb                                                                | Pronto 02/08 14:15
+ - Categoria                                                            | Pronto 02/08 14:15
+ - Title                                                                | Pronto 02/08 14:15
+ - Data                                                                 | Pronto 02/08 14:15
+
+ Nav slider ( Construir função de slider e botões )
+
+
+/ - Contato 
+ 

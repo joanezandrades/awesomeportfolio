@@ -1,0 +1,15 @@
+
+#IMPORTANTES
+- Adicionar campo de subtitulo nas pages                    - PRONTO
+- Estilizar posts das pages                                 - PRONTO
+- Finalizar layout para mobile                              - 
+- Verificar porque o host não reconhece o tema como pai     - 
+
+
+#URGENTES
+- Organizar head description dos arquivos .PHP do tema      - PRONTO
+- 
+
+
+
+#NÃOIMPORTANTE

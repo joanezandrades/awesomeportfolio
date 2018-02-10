@@ -1,0 +1,3 @@
+- Concertar thumb/cover do destaque - Desktop/Mobile
+- Criar Logotipo
+- Desativar slider da home

@@ -1,0 +1,143 @@
+-- HEADER
+Registrar menu | Pronto
+Registar custom logo size | Pronto
+
+-- HOMEPAGE
+Retornar menu do slider com php. | Pronto
+
+-- SERVIÇOS
+
+
+-- PORTFÓLIO
+Criar meta Campo para o link dos projetos | Pronto
+
+
+-- LOJA
+Adicionar meta campos para:
+	Versão | Pronto
+	Preço | Pronto
+	Background imagem/cor *Testar | Pronto
+
+
+-- Blog
+Adicionar suporte à imagens destacadas | Pronto
+
+-- Contato
+Adicionar meta_tags de:
+	endereço	| PRONTO
+	mapa		| PRONTO
+	phone		| PRONTO
+	email 		| PRONTO
+
+	*Não está renderizando as metabox na página | Resolvido
+	*Não etá
+
+-- Widgets
+Widgets para linkar as páginas das redes sociais
+
+
+-- awesome_setup
+
+- Custom logo | Pronto
+- HTML 5 Support | Pronto
+- Post thumbnail support | Pronto
+- Add support para tamanho das imagens (Fazer levantamento dos tamanhos) | Pronto
+
+
+
+
+
+
+$extra-big-size: 42pt 		-> 56px
+$big-size: 36pt				-> 48px
+$medium-to-big-size: 22pt 	-> 28px
+
+$text-size: 18pt 			-> 24px
+$text-small-size: 16pt 		-> 21px
+
+
+$small-size: 14pt 			-> 18px
+$small-medium-size: 12pt	-> 16px
+$very-small-size: 10pt 		-> 13px
+
+
+// - Familias
+$font-maven:        'Maven Pro', sans-serif
+$font-roboto:	    'Roboto', sans-serif
+
+// - Expessura
+$font-bold:             900
+$font-regular:          400
+$font-light:            300
+
+// - Tamanhos
+$extra-size:        	5.6em
+$big-size:              3.6em
+$medium-size:    		2.8em
+$menu-size: 			2.2em
+
+$text-size:             1.8em
+$text-small-size:       1.6em
+
+$small-size:            1.4em
+$very-small-size:       1.2em
+
+
+$primary-bg: 			#FFFFFF
+$secondary-bg: 			#F8F8F8
+$accent-color: 			#1093E4
+$primary-color: 		#151F29
+$primary-light-color: 	#24313A
+
+
+
+Funções JS
+
+// Função getMenu()/closeMenu()     -    Pronta
+
+// Função hoverPortfolio()          -    Pronta
+
+// Função hoverBlog()               -    Pronta
+
+// Função sendMail(
+	1) Uma função javascript coleta os dados de um formulário HTML e alimenta um cliente ajax. / Pronto
+
+	2) O ajax envia ao servidor PHP as informações coletadas no passo anterior e aguarda o retorno. / Pronto
+
+	3) Enquanto isso o servidor PHP coleta as informações e faz login no servidor SMTP, solicitando um disparo de e-mail. / Pronto
+
+	4) Se tudo estiver ‘ok’ o servidor SMTP dispara o e-mail e envia uma mensagem de retorno para o servidor PHP. / Pronto
+
+	5) O servidor PHP devolve o retorno para o cliente ajax. / Pronto
+
+	6) O cliente ajax imprime o resultado da requisição no HTML. / Pronto
+) -    Pronta (revisar na hospedagem)
+
+// Função rollPageLink();		 	-    Pronta
+
+// Função removeActiveMenu() 		- 	 Pronta
+
+
+/ - Funções 28/07/2017
+	
+	scrollDown(
+		botão da homepage
+	)
+	- Pronta
+
+	rollScroll(
+		identifica a rolagem do mouse e chama seção seguinte
+	)
+
+	sliderServicos(
+		Nova função
+	)
+	- Pronta
+
+	hoverPortfolio(
+		passar o mouse ativa as informações do job
+	)
+
+	addDestaqueBlog(
+		adiciona a classe destaque no último post
+	)

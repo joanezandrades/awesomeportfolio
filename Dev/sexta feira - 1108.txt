@@ -1,0 +1,58 @@
+- #desktop
+Ajustar menu fixado ao rolar a página                               - Pronto
+    - Adicionar background ao rolar a página 
+    - Diminuir o height                         
+
+Serviços                                                            - Pronto
+    - Trocar background para o secondary-bg
+
+Finalizar homepage                                                  - Pronto
+    - Adicionar letter-spacing no title e subtitle
+    - Deixar sem tags por enquanto
+    - Definir estilo do botão
+    - Botão scroll down agora se chama explorar e não tem bordas adicionar animação
+    
+
+Finalizar Portfolio
+    - Consertar Titulo
+    - Definir estilo do botão e mudar o nome para "Explore"
+
+Finalizar Contato
+    - Background menos chamativo
+
+Botões sociais
+    - Melhorar o design
+
+Posts/Pages
+    - 
+
+
+$trans-time-default: 		cubic-bezier(.22,1.61,.65,1)
+$trans-duration-default: 	1s
+$trans-delay-default:		.37s
+
+
+transition-delay: $trans-delay-default
+transition-duration: $trans-duration-default
+transition-timing-function: $trans-time-default
+
+<!-- Bootstrap  -->
+        <link rel="stylesheet" href="wp-content/themes/awesomeportfolio/libs/bootstrap/css/scrolling-nav.css">
+
+        <!-- reset.css e style.css-->
+        <?php 
+            if( is_home() ) :
+            
+        ?>
+            <link rel="stylesheet" href="wp-content/themes/awesomeportfolio/libs/css/reset.min.css">
+            <link rel="stylesheet" href="wp-content/themes/awesomeportfolio/libs/css/keyframes.css">
+            <link rel="stylesheet" href="wp-content/themes/awesomeportfolio/libs/css/style-theme.min.css">
+        <?php
+            elseif( is_single() || is_page() ) :
+        ?>
+            <link rel="stylesheet" href="../../wp-content/themes/awesomeportfolio/libs/css/reset.min.css">
+            <link rel="stylesheet" href="../../wp-content/themes/awesomeportfolio/libs/css/style-theme.min.css">
+
+        <?php
+            endif;
+        ?>

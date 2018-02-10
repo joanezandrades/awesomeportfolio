@@ -1,0 +1,7 @@
+
+- Melhorar a imagem cover do slider da home - Mobile/Desktop
+ - Gun metal
+- Estilar menu fixo quando rolar a página - Desktop
+
+- Finalizar layout posts mobile
+- Carregar folhas de estilos e arquivos js como o Wordpress sugere wp_enqueue_scripts()
